@@ -12,7 +12,9 @@ namespace EasyOrder.API.Models.Domain
         public int EmployeeId { get; set; }
         public Employee Employee { get; set; }
         public Table Table { get; set; }
-        public ICollection<OrderDetails> Details { get; set; }
+        [ForeignKey("OrderDetailId")]
+        public int OrderDetailId { get; set; }
+        public OrderDetails OrderDetails { get; set; }
         public Bill Bill { get; set; }
     }
 }

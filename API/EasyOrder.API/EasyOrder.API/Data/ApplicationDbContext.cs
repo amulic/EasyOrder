@@ -5,7 +5,7 @@ namespace EasyOrder.API.Data
 {
     public class ApplicationDbContext : DbContext
     {
-        public ApplicationDbContext(DbContextOptions options) : base(options)
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {
         }
 
@@ -35,6 +35,23 @@ namespace EasyOrder.API.Data
                 .HasForeignKey(e => e.EmployeeId)  
                 .OnDelete(DeleteBehavior.Restrict);
 
+            modelBuilder.Entity<OrderDetails>()
+                .HasKey(od => od.Id);
+
+            //modelBuilder za OrderDetails
+
+            modelBuilder.Entity<OrderDetails>()
+                 .HasOne(od => od.Order)
+                 .WithOne(o => o.OrderDetails)
+                 .HasForeignKey<Order>(o => o.OrderDetailId).OnDelete(DeleteBehavior.Restrict);
+
+            modelBuilder.Entity<Product>()
+                .HasOne(p => p.OrderDetails)
+                .WithMany(od => od.Product)
+                .HasForeignKey(p => p.OrderDetailId).OnDelete(DeleteBehavior.Restrict);
+
+
+
 
             modelBuilder.Entity<User>()
                 .HasOne(e => e.Administrator)
@@ -57,8 +74,6 @@ namespace EasyOrder.API.Data
                 .HasOne(e => e.JobPosition)
                 .WithMany(e => e.EmployeeJobPositions)
                 .HasForeignKey(e => e.JobPositionId);
-
-            for(var foreignkey in modelBuilder.Model.Ge)
 
         }
     }

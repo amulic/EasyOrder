@@ -1,37 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\petar\\Desktop\\FIT\\3 godina\\5 semestar\\RS1\\EasyOrder\\API\\EasyOrder.API\\EasyOrder.API\\EasyOrder.API.csproj": {}
+    "C:\\Users\\amuli\\Desktop\\RS1SEMINARSKI\\EasyOrder\\API\\EasyOrder.API\\EasyOrder.API\\EasyOrder.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\petar\\Desktop\\FIT\\3 godina\\5 semestar\\RS1\\EasyOrder\\API\\EasyOrder.API\\EasyOrder.API\\EasyOrder.API.csproj": {
+    "C:\\Users\\amuli\\Desktop\\RS1SEMINARSKI\\EasyOrder\\API\\EasyOrder.API\\EasyOrder.API\\EasyOrder.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\petar\\Desktop\\FIT\\3 godina\\5 semestar\\RS1\\EasyOrder\\API\\EasyOrder.API\\EasyOrder.API\\EasyOrder.API.csproj",
+        "projectUniqueName": "C:\\Users\\amuli\\Desktop\\RS1SEMINARSKI\\EasyOrder\\API\\EasyOrder.API\\EasyOrder.API\\EasyOrder.API.csproj",
         "projectName": "EasyOrder.API",
-        "projectPath": "C:\\Users\\petar\\Desktop\\FIT\\3 godina\\5 semestar\\RS1\\EasyOrder\\API\\EasyOrder.API\\EasyOrder.API\\EasyOrder.API.csproj",
-        "packagesPath": "C:\\Users\\petar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\petar\\Desktop\\FIT\\3 godina\\5 semestar\\RS1\\EasyOrder\\API\\EasyOrder.API\\EasyOrder.API\\obj\\",
+        "projectPath": "C:\\Users\\amuli\\Desktop\\RS1SEMINARSKI\\EasyOrder\\API\\EasyOrder.API\\EasyOrder.API\\EasyOrder.API.csproj",
+        "packagesPath": "C:\\Users\\amuli\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\amuli\\Desktop\\RS1SEMINARSKI\\EasyOrder\\API\\EasyOrder.API\\EasyOrder.API\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\petar\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\amuli\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net8.0"
+          "net7.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net8.0": {
-            "targetAlias": "net8.0",
+          "net7.0": {
+            "targetAlias": "net7.0",
             "projectReferences": {}
           }
         },
@@ -42,18 +37,40 @@
         }
       },
       "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
+        "net7.0": {
+          "targetAlias": "net7.0",
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.14, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.14, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[8.0.0, )"
+              "version": "[7.0.14, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.0, )"
+              "version": "[7.0.14, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[7.0.0, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -79,7 +96,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }
