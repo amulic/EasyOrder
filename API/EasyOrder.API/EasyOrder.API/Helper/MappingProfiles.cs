@@ -12,6 +12,8 @@ namespace EasyOrder.API.Helper
             CreateMap<AdministratorDto, Administrator>();
             CreateMap<User, UserDto>();
             CreateMap<UserDto, User>();
+            CreateMap<Bill, BillDto>();
+            CreateMap<BillDto, Bill>();
         }
     }
 }
