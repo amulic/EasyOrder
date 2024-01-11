@@ -2,74 +2,73 @@
 using EasyOrder.API.Interface;
 using EasyOrder.API.Models.Domain;
 using EasyOrder.API.Models.DTO;
+using EasyOrder.API.Repository;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EasyOrder.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class BillController : Controller
+    public class CityController : Controller
     {
-        private IBillRepository _billRepository;
+        private ICityRepository _cityRepository;
         private IMapper _mapper;
 
-        public BillController(IBillRepository billRepository, IMapper mapper)
+        public CityController(ICityRepository cityRepository, IMapper mapper)
         {
-            _billRepository = billRepository;
+            _cityRepository = cityRepository;
             _mapper = mapper;
         }
 
-        [HttpGet("{billId}")]
-        [ProducesResponseType(200, Type = typeof(Bill))]
-        [ProducesResponseType(400)]
-        public IActionResult GetBill(int billId) 
+        [HttpGet("{cityId}")]
+        public IActionResult GetCity(int cityId)
         {
-            if (!_billRepository.BillExists(billId))
+            if (!_cityRepository.CityExists(cityId))
                 return NotFound();
 
-            var bill = _mapper.Map<BillDto>(_billRepository.GetBill(billId));
+            var city = _mapper.Map<BillDto>(_cityRepository.GetCity(cityId));
 
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            return Ok(bill);
+            return Ok(city);
         }
 
         [HttpGet]
         [ProducesResponseType(200)]
-        public IActionResult GetBills()
+        public IActionResult GetCities()
         {
-            var bills = _mapper.Map<List<BillDto>>(_billRepository.GetBills());
+            var cities = _mapper.Map<List<BrandDto>>(_cityRepository.GetCities());
 
 
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            return Ok(bills);
+            return Ok(cities);
         }
 
 
         [HttpPost]
         [ProducesResponseType(204)]
         [ProducesResponseType(400)]
-        public IActionResult CreateBill([FromBody] BillDto billCreate)
+        public IActionResult CreateCity([FromBody] CityDto cityCreate)
         {
-            if (billCreate == null)
+            if (cityCreate == null)
                 return BadRequest();
 
-            var bill = _billRepository.GetBills().Where(c => c.Id == billCreate.Id).FirstOrDefault();
+            var city = _cityRepository.GetCities().Where(c => c.Id == cityCreate.Id).FirstOrDefault();
 
-            if (bill != null)
+            if (city != null)
             {
-                ModelState.AddModelError("", "Bill already exists");
+                ModelState.AddModelError("", "City already exists");
                 return StatusCode(422, ModelState);
             }
 
             if (!ModelState.IsValid) return BadRequest();
 
-            var billMap = _mapper.Map<Bill>(billCreate);
+            var cityMap = _mapper.Map<City>(cityCreate);
 
-            if (!_billRepository.CreateBill(billMap))
+            if (!_cityRepository.CreateCity(cityMap))
             {
                 ModelState.AddModelError("", "Something went wrong while saving");
                 return StatusCode(500, ModelState);
@@ -77,6 +76,5 @@ namespace EasyOrder.API.Controllers
 
             return Ok("Successfully created");
         }
-
     }
 }

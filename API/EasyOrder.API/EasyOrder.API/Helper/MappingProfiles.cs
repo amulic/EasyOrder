@@ -14,6 +14,10 @@ namespace EasyOrder.API.Helper
             CreateMap<UserDto, User>();
             CreateMap<Bill, BillDto>();
             CreateMap<BillDto, Bill>();
+            CreateMap<Brand, BrandDto>();
+            CreateMap<BrandDto, Brand>();
+            CreateMap<City, CityDto>();
+            CreateMap<CityDto, City>();
         }
     }
 }

@@ -26,6 +26,8 @@ namespace EasyOrder.API.Data
 
         public DbSet<Bill> Bills { get; set; }
         public DbSet<PaymentMethod> PaymentMethods { get; set; }
+        
+        public DbSet<City> Cities { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -50,7 +52,17 @@ namespace EasyOrder.API.Data
                 .WithMany(od => od.Product)
                 .HasForeignKey(p => p.OrderDetailId).OnDelete(DeleteBehavior.Restrict);
 
+            //modelBuilder za Cities
 
+            modelBuilder.Entity<City>()
+                .HasMany(c => c.Suppliers)
+                .WithOne(s => s.City)
+                .HasForeignKey(s => s.CityId);
+
+            modelBuilder.Entity<City>()
+                .HasMany(c => c.Employees)
+                .WithOne(e => e.City)
+                .HasForeignKey(e => e.CityId);
 
 
             modelBuilder.Entity<User>()

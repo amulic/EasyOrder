@@ -2,74 +2,73 @@
 using EasyOrder.API.Interface;
 using EasyOrder.API.Models.Domain;
 using EasyOrder.API.Models.DTO;
+using EasyOrder.API.Repository;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EasyOrder.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class BillController : Controller
+    public class BrandController : Controller
     {
-        private IBillRepository _billRepository;
+        private IBrandRepository _brandRepository;
         private IMapper _mapper;
 
-        public BillController(IBillRepository billRepository, IMapper mapper)
+        public BrandController(IBrandRepository brandRepository, IMapper mapper)
         {
-            _billRepository = billRepository;
+            _brandRepository = brandRepository;
             _mapper = mapper;
         }
 
-        [HttpGet("{billId}")]
-        [ProducesResponseType(200, Type = typeof(Bill))]
-        [ProducesResponseType(400)]
-        public IActionResult GetBill(int billId) 
+        [HttpGet("{brandId}")]
+        public IActionResult GetBrand(int brandId) 
         {
-            if (!_billRepository.BillExists(billId))
+            if (!_brandRepository.BrandExists(brandId))
                 return NotFound();
 
-            var bill = _mapper.Map<BillDto>(_billRepository.GetBill(billId));
+            var brand = _mapper.Map<BillDto>(_brandRepository.GetBrand(brandId));
 
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            return Ok(bill);
+            return Ok(brand);
         }
 
         [HttpGet]
         [ProducesResponseType(200)]
-        public IActionResult GetBills()
+        public IActionResult GetBrands()
         {
-            var bills = _mapper.Map<List<BillDto>>(_billRepository.GetBills());
+            var brands = _mapper.Map<List<BrandDto>>(_brandRepository.GetBrands());
 
 
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            return Ok(bills);
+            return Ok(brands);
         }
 
 
         [HttpPost]
         [ProducesResponseType(204)]
         [ProducesResponseType(400)]
-        public IActionResult CreateBill([FromBody] BillDto billCreate)
+        public IActionResult CreateBrand([FromBody] BrandDto brandCreate)
         {
-            if (billCreate == null)
+            if (brandCreate == null)
                 return BadRequest();
 
-            var bill = _billRepository.GetBills().Where(c => c.Id == billCreate.Id).FirstOrDefault();
+            var brand = _brandRepository.GetBrands().Where(c => c.Id == brandCreate.Id).FirstOrDefault();
 
-            if (bill != null)
+            if (brand != null)
             {
-                ModelState.AddModelError("", "Bill already exists");
+                ModelState.AddModelError("", "Brand already exists");
                 return StatusCode(422, ModelState);
             }
 
             if (!ModelState.IsValid) return BadRequest();
 
-            var billMap = _mapper.Map<Bill>(billCreate);
+            var brandMap = _mapper.Map<Brand>(brandCreate);
 
-            if (!_billRepository.CreateBill(billMap))
+            if (!_brandRepository.CreateBrand(brandMap))
             {
                 ModelState.AddModelError("", "Something went wrong while saving");
                 return StatusCode(500, ModelState);
@@ -77,6 +76,5 @@ namespace EasyOrder.API.Controllers
 
             return Ok("Successfully created");
         }
-
     }
 }

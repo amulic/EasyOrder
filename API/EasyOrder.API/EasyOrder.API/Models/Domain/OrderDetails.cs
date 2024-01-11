@@ -8,7 +8,7 @@ namespace EasyOrder.API.Models.Domain
         [Key]
         public int Id { get; set; }
         public int Quantity { get; set; }
-
+        //dodan za modelBuilder
         [ForeignKey("OrderId")]
         public int OrderId { get; set; }
         public Order Order { get; set; }
