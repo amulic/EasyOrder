@@ -9,66 +9,65 @@ namespace EasyOrder.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class CityController : Controller
+    public class CountryController : Controller
     {
-        private ICityRepository _cityRepository;
+        private ICountryRepository _countryRepository;
         private IMapper _mapper;
 
-        public CityController(ICityRepository cityRepository, IMapper mapper)
+        public CountryController(ICountryRepository countryRepository, IMapper mapper)
         {
-            _cityRepository = cityRepository;
+            _countryRepository = countryRepository;
             _mapper = mapper;
         }
-
-        [HttpGet("{cityId}")]
-        public IActionResult GetCity(int cityId)
+        [HttpGet("{countryId}")]
+        public IActionResult GetCountry(int countryId)
         {
-            if (!_cityRepository.CityExists(cityId))
+            if (!_countryRepository.CountryExists(countryId))
                 return NotFound();
 
-            var city = _mapper.Map<CityDto>(_cityRepository.GetCity(cityId));
+            var country = _mapper.Map<CountryDto>(_countryRepository.GetCountry(countryId));
 
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            return Ok(city);
+            return Ok(country);
         }
 
         [HttpGet]
         [ProducesResponseType(200)]
-        public IActionResult GetCities()
+        public IActionResult GetCountries()
         {
-            var cities = _mapper.Map<List<CityDto>>(_cityRepository.GetCities());
+            var countries = _mapper.Map<List<CountryDto>>(_countryRepository.GetCountries());
 
 
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            return Ok(cities);
+            return Ok(countries);
         }
 
 
         [HttpPost]
         [ProducesResponseType(204)]
         [ProducesResponseType(400)]
-        public IActionResult CreateCity([FromBody] CityDto cityCreate)
+        public IActionResult CreateCountry([FromBody] CountryDto countryCreate)
         {
-            if (cityCreate == null)
+            if (countryCreate == null)
                 return BadRequest();
 
-            var city = _cityRepository.GetCities().Where(c => c.Id == cityCreate.Id).FirstOrDefault();
+            var city = _countryRepository.GetCountries().Where(c => c.Id == countryCreate.Id).FirstOrDefault();
 
             if (city != null)
             {
-                ModelState.AddModelError("", "City already exists");
+                ModelState.AddModelError("", "Country already exists");
                 return StatusCode(422, ModelState);
             }
 
             if (!ModelState.IsValid) return BadRequest();
 
-            var cityMap = _mapper.Map<City>(cityCreate);
+            var countryMap = _mapper.Map<Country>(countryCreate);
 
-            if (!_cityRepository.CreateCity(cityMap))
+            if (!_countryRepository.CreateCountry(countryMap))
             {
                 ModelState.AddModelError("", "Something went wrong while saving");
                 return StatusCode(500, ModelState);

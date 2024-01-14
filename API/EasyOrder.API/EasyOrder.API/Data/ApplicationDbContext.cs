@@ -28,6 +28,8 @@ namespace EasyOrder.API.Data
         public DbSet<PaymentMethod> PaymentMethods { get; set; }
         
         public DbSet<City> Cities { get; set; }
+        public DbSet<Country> Countries { get; set; }
+
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

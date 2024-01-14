@@ -18,6 +18,10 @@ namespace EasyOrder.API.Helper
             CreateMap<BrandDto, Brand>();
             CreateMap<City, CityDto>();
             CreateMap<CityDto, City>();
+            CreateMap<Country, CountryDto>();
+            CreateMap<CountryDto, Country>();
+            CreateMap<Employee, EmployeeDto>();
+            CreateMap<EmployeeDto, Employee>();
         }
     }
 }
