@@ -26,6 +26,8 @@ namespace EasyOrder.API.Helper
             CreateMap<JobPositonDto, JobPosition>();
             CreateMap<Order, OrderDto>();
             CreateMap<OrderDto, Order>();
+            CreateMap<Table, TableDto>();
+            CreateMap<TableDto, Table>();
         }
     }
 }
