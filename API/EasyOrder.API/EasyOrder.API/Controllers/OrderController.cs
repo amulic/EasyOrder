@@ -2,20 +2,18 @@
 using EasyOrder.API.Interface;
 using EasyOrder.API.Models.Domain;
 using EasyOrder.API.Models.DTO;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EasyOrder.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class UsersController : ControllerBase
+    public class OrderController : Controller
     {
-
         private IUserRepository _userRepository;
         private IMapper _mapper;
 
-        public UsersController(IUserRepository userRepository, IMapper mapper)
+        public OrderController(IUserRepository userRepository, IMapper mapper)
         {
             _userRepository = userRepository;
             _mapper = mapper;
@@ -50,7 +48,7 @@ namespace EasyOrder.API.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> CreateUser([FromBody]UserDto userCreate)
+        public async Task<IActionResult> CreateUser([FromBody] UserDto userCreate)
         {
             if (userCreate == null)
                 return BadRequest();

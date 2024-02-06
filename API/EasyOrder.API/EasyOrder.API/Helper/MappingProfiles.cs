@@ -22,6 +22,10 @@ namespace EasyOrder.API.Helper
             CreateMap<CountryDto, Country>();
             CreateMap<Employee, EmployeeDto>();
             CreateMap<EmployeeDto, Employee>();
+            CreateMap<JobPosition, JobPositonDto>();
+            CreateMap<JobPositonDto, JobPosition>();
+            CreateMap<Order, OrderDto>();
+            CreateMap<OrderDto, Order>();
         }
     }
 }

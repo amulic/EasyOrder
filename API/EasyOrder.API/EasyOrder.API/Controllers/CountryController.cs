@@ -55,9 +55,9 @@ namespace EasyOrder.API.Controllers
             if (countryCreate == null)
                 return BadRequest();
 
-            var city = _countryRepository.GetCountries().Where(c => c.Id == countryCreate.Id).FirstOrDefault();
+            var country = _countryRepository.GetCountries().Where(c => c.Id == countryCreate.Id).FirstOrDefault();
 
-            if (city != null)
+            if (country != null)
             {
                 ModelState.AddModelError("", "Country already exists");
                 return StatusCode(422, ModelState);
