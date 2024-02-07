@@ -75,3 +75,9 @@ C:\Users\amuli\Desktop\RS1SEMINARSKI\EasyOrder\API\EasyOrder.API\EasyOrder.API\o
 C:\Users\amuli\Desktop\RS1SEMINARSKI\EasyOrder\API\EasyOrder.API\EasyOrder.API\obj\Debug\net7.0\EasyOrder.API.pdb
 C:\Users\amuli\Desktop\RS1SEMINARSKI\EasyOrder\API\EasyOrder.API\EasyOrder.API\obj\Debug\net7.0\EasyOrder.API.genruntimeconfig.cache
 C:\Users\amuli\Desktop\RS1SEMINARSKI\EasyOrder\API\EasyOrder.API\EasyOrder.API\obj\Debug\net7.0\ref\EasyOrder.API.dll
+C:\Users\amuli\Desktop\RS1SEMINARSKI\EasyOrder\API\EasyOrder.API\EasyOrder.API\bin\Debug\net7.0\System.Web.Cors.dll
+C:\Users\amuli\Desktop\RS1SEMINARSKI\EasyOrder\API\EasyOrder.API\EasyOrder.API\bin\Debug\net7.0\System.Net.Http.Formatting.dll
+C:\Users\amuli\Desktop\RS1SEMINARSKI\EasyOrder\API\EasyOrder.API\EasyOrder.API\bin\Debug\net7.0\System.Web.Http.dll
+C:\Users\amuli\Desktop\RS1SEMINARSKI\EasyOrder\API\EasyOrder.API\EasyOrder.API\bin\Debug\net7.0\System.Web.Http.Cors.dll
+C:\Users\amuli\Desktop\RS1SEMINARSKI\EasyOrder\API\EasyOrder.API\EasyOrder.API\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\Users\amuli\Desktop\RS1SEMINARSKI\EasyOrder\API\EasyOrder.API\EasyOrder.API\bin\Debug\net7.0\Newtonsoft.Json.Bson.dll
