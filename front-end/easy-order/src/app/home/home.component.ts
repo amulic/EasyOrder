@@ -16,6 +16,7 @@ export class HomeComponent implements OnInit{
     constructor(public httpClient: HttpClient ) {
     }
 
+
     drzave: CountryGetallResponseObj[] = [];
     ngOnInit(): void {
         let url = MojConfig.adresa_servera + `/api/Country`
@@ -23,6 +24,12 @@ export class HomeComponent implements OnInit{
             this.drzave = x.countries;
         })
     }
-
-
+    preuzmiNovePodatke($event: Event) {
+        // @ts-ignore
+        let naziv = $event.target.value;
+        let url = MojConfig.adresa_servera + `/api/Country`
+        this.httpClient.get<CountryGetallResponse>(url).subscribe((x: CountryGetallResponse) => {
+            this.drzave = x.countries;
+        })
+    }
 }

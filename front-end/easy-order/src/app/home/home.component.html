@@ -1,6 +1,13 @@
-<table>
+<input (input)="preuzmiNovePodatke($event)">
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th>Id</th>
+    <th>Name</th>
+  </tr>
+  </thead>
   <tbody>
-<tr *ngFor="let item of drzave">
+  <tr *ngFor="let item of drzave">
     <td>{{ item.id }}</td>
     <td>{{ item.name }}</td>
   </tr>
