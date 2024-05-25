@@ -28,6 +28,14 @@ namespace EasyOrder.API.Helper
             CreateMap<OrderDto, Order>();
             CreateMap<Table, TableDto>();
             CreateMap<TableDto, Table>();
+            CreateMap<Food, FoodDto>();
+            CreateMap<FoodDto, Food>();
+            CreateMap<Supplier, SupplierDto>();
+            CreateMap<SupplierDto, Supplier>();
+            CreateMap<Product, ProductDto>();
+            CreateMap<ProductDto, Product>();
+
+
         }
     }
 }

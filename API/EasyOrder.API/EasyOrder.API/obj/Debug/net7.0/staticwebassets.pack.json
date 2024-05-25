@@ -1,0 +1,29 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\amuli\\Desktop\\RS1SEMINARSKI\\EasyOrder\\API\\EasyOrder.API\\EasyOrder.API\\wwwroot\\images\\drinkThumbnail.jpg",
+      "PackagePath": "staticwebassets\\images\\drinkThumbnail.jpg"
+    },
+    {
+      "Id": "C:\\Users\\amuli\\Desktop\\RS1SEMINARSKI\\EasyOrder\\API\\EasyOrder.API\\EasyOrder.API\\wwwroot\\images\\foodThumbnail.avif",
+      "PackagePath": "staticwebassets\\images\\foodThumbnail.avif"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.EasyOrder.API.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.EasyOrder.API.props",
+      "PackagePath": "build\\EasyOrder.API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.EasyOrder.API.props",
+      "PackagePath": "buildMultiTargeting\\EasyOrder.API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.EasyOrder.API.props",
+      "PackagePath": "buildTransitive\\EasyOrder.API.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -15,7 +15,9 @@ namespace EasyOrder.API.Data
         public DbSet<JobPosition> JobPositions { get; set; }
 
         public DbSet<Order> Orders { get; set; }
-        public DbSet<OrderDetails> OrderDetails { get; set; }
+        public DbSet<OrderDetail> OrderDetails { get; set; }
+        //public DbSet<OrderDetail<Food>> OrderDetails { get; set; }
+
 
         public DbSet<Product> Products { get; set; }
         public DbSet<Supplier> Suppliers { get; set; }
@@ -29,30 +31,48 @@ namespace EasyOrder.API.Data
         
         public DbSet<City> Cities { get; set; }
         public DbSet<Country> Countries { get; set; }
+        public DbSet<Food> Foods { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+
+            // modelBuilder za OrderDetailItems za Items
+
+            modelBuilder.Entity<OrderDetailItem<Food>>()
+                .HasKey(odf => new { odf.OrderDetailId, odf.ItemId });
+
+            //modelBuilder.Entity<OrderDetailItem<Drink>>()
+            //.HasKey(odd => new { odd.OrderDetailId, odd.ItemId });
+
+            //modelBuilder za OrderDetailItems i OrderDetails
+
+            modelBuilder.Entity<OrderDetailItem<Food>>()
+                .HasOne(odf => odf.OrderDetail)
+                .WithMany(od => od.Foods)
+                .HasForeignKey(odf => odf.OrderDetailId);
+
+            //modelBuilder.Entity<OrderDetailItem<Drink>>()
+            //   .HasOne(odd => odd.OrderDetail)
+            //   .WithMany(od => od.Drinks)
+            //   .HasForeignKey(odd => odd.OrderDetailId);
+
             modelBuilder.Entity<Order>()
                 .HasOne(e => e.Employee)
                 .WithMany(e => e.Orders)
                 .HasForeignKey(e => e.EmployeeId)  
                 .OnDelete(DeleteBehavior.Restrict);
 
-            modelBuilder.Entity<OrderDetails>()
-                .HasKey(od => od.Id);
+           // modelBuilder.Entity<OrderDetail>()
+                //.HasKey(od => od.Id);
 
             //modelBuilder za OrderDetails
 
-            modelBuilder.Entity<OrderDetails>()
-                 .HasOne(od => od.Order)
-                 .WithOne(o => o.OrderDetails)
-                 .HasForeignKey<Order>(o => o.OrderDetailId).OnDelete(DeleteBehavior.Restrict);
+            modelBuilder.Entity<Order>()
+               .HasOne(o => o.OrderDetails)
+               .WithOne(od => od.Order)
+               .HasForeignKey<OrderDetail>(od => od.OrderId);
 
-            modelBuilder.Entity<Product>()
-                .HasOne(p => p.OrderDetails)
-                .WithMany(od => od.Product)
-                .HasForeignKey(p => p.OrderDetailId).OnDelete(DeleteBehavior.Restrict);
 
             //modelBuilder za Cities
 

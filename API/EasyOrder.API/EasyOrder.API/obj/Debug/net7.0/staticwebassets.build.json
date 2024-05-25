@@ -1,11 +1,58 @@
 {
   "Version": 1,
-  "Hash": "cckfAnj7kTSJY9TEWLeLkFxX4cFnvpSea7b0kUOOWvM=",
+  "Hash": "Y9+jWSXfX0NxcL1tVzPotdV8zdqJxS5qy9tG38HtTwI=",
   "Source": "EasyOrder.API",
   "BasePath": "_content/EasyOrder.API",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "EasyOrder.API\\wwwroot",
+      "Source": "EasyOrder.API",
+      "ContentRoot": "C:\\Users\\amuli\\Desktop\\RS1SEMINARSKI\\EasyOrder\\API\\EasyOrder.API\\EasyOrder.API\\wwwroot\\",
+      "BasePath": "_content/EasyOrder.API",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\amuli\\Desktop\\RS1SEMINARSKI\\EasyOrder\\API\\EasyOrder.API\\EasyOrder.API\\wwwroot\\images\\drinkThumbnail.jpg",
+      "SourceId": "EasyOrder.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\amuli\\Desktop\\RS1SEMINARSKI\\EasyOrder\\API\\EasyOrder.API\\EasyOrder.API\\wwwroot\\",
+      "BasePath": "_content/EasyOrder.API",
+      "RelativePath": "images/drinkThumbnail.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\drinkThumbnail.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\amuli\\Desktop\\RS1SEMINARSKI\\EasyOrder\\API\\EasyOrder.API\\EasyOrder.API\\wwwroot\\images\\foodThumbnail.avif",
+      "SourceId": "EasyOrder.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\amuli\\Desktop\\RS1SEMINARSKI\\EasyOrder\\API\\EasyOrder.API\\EasyOrder.API\\wwwroot\\",
+      "BasePath": "_content/EasyOrder.API",
+      "RelativePath": "images/foodThumbnail.avif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\foodThumbnail.avif"
+    }
+  ]
 }

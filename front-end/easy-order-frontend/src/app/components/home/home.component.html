@@ -1,0 +1,18 @@
+<div class="block p-4 pb-12 pt-6 sm:pb-24 sm:pt-12">
+  <section class="pt-6 pb-8 md:pb-12 md:pt-10 ">
+    <div class="p-10 mx-20 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 justify-items-center">
+    <div hlmCard class="size-[300px] overflow-hidden mb-2 cursor-pointer hover:scale-110 transition-all" routerLink="/food">
+      <div hlmCardHeader>
+        <h3 hlmCardTitle class="font-extrabold text-2xl">Food</h3>
+      </div>
+      <img src="https://localhost:7282/images/foodThumbail"  class="size-full object-cover "/>
+    </div>
+    <div hlmCard class="size-[300px] overflow-hidden cursor-pointer hover:scale-110 transition-all" routerLink="/drinks">
+      <div hlmCardHeader>
+        <h3 hlmCardTitle class="font-extrabold text-2xl">Drinks</h3>
+      </div>
+      <img [src]="'https://localhost:7282/images/drinkThumbnail'"  class="size-full object-cover "/>
+    </div>
+    </div>
+  </section>
+</div>

@@ -69,7 +69,6 @@ C:\Users\amuli\Desktop\RS1SEMINARSKI\EasyOrder\API\EasyOrder.API\EasyOrder.API\o
 C:\Users\amuli\Desktop\RS1SEMINARSKI\EasyOrder\API\EasyOrder.API\EasyOrder.API\obj\Debug\net7.0\staticwebassets.build.json
 C:\Users\amuli\Desktop\RS1SEMINARSKI\EasyOrder\API\EasyOrder.API\EasyOrder.API\obj\Debug\net7.0\staticwebassets.development.json
 C:\Users\amuli\Desktop\RS1SEMINARSKI\EasyOrder\API\EasyOrder.API\EasyOrder.API\obj\Debug\net7.0\scopedcss\bundle\EasyOrder.API.styles.css
-C:\Users\amuli\Desktop\RS1SEMINARSKI\EasyOrder\API\EasyOrder.API\EasyOrder.API\obj\Debug\net7.0\EasyOrder.API.csproj.CopyComplete
 C:\Users\amuli\Desktop\RS1SEMINARSKI\EasyOrder\API\EasyOrder.API\EasyOrder.API\obj\Debug\net7.0\EasyOrder.API.dll
 C:\Users\amuli\Desktop\RS1SEMINARSKI\EasyOrder\API\EasyOrder.API\EasyOrder.API\obj\Debug\net7.0\refint\EasyOrder.API.dll
 C:\Users\amuli\Desktop\RS1SEMINARSKI\EasyOrder\API\EasyOrder.API\EasyOrder.API\obj\Debug\net7.0\EasyOrder.API.pdb
@@ -81,3 +80,6 @@ C:\Users\amuli\Desktop\RS1SEMINARSKI\EasyOrder\API\EasyOrder.API\EasyOrder.API\b
 C:\Users\amuli\Desktop\RS1SEMINARSKI\EasyOrder\API\EasyOrder.API\EasyOrder.API\bin\Debug\net7.0\System.Web.Http.Cors.dll
 C:\Users\amuli\Desktop\RS1SEMINARSKI\EasyOrder\API\EasyOrder.API\EasyOrder.API\bin\Debug\net7.0\Newtonsoft.Json.dll
 C:\Users\amuli\Desktop\RS1SEMINARSKI\EasyOrder\API\EasyOrder.API\EasyOrder.API\bin\Debug\net7.0\Newtonsoft.Json.Bson.dll
+C:\Users\amuli\Desktop\RS1SEMINARSKI\EasyOrder\API\EasyOrder.API\EasyOrder.API\obj\Debug\net7.0\EasyOrder.API.sourcelink.json
+C:\Users\amuli\Desktop\RS1SEMINARSKI\EasyOrder\API\EasyOrder.API\EasyOrder.API\obj\Debug\net7.0\EasyOrde.AB2D394A.Up2Date
+C:\Users\amuli\Desktop\RS1SEMINARSKI\EasyOrder\API\EasyOrder.API\EasyOrder.API\bin\Debug\net7.0\EasyOrder.API.staticwebassets.runtime.json

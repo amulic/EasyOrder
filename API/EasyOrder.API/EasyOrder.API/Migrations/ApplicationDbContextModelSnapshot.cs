@@ -160,6 +160,26 @@ namespace EasyOrder.API.Migrations
                     b.ToTable("EmployeeJobPosition");
                 });
 
+            modelBuilder.Entity("EasyOrder.API.Models.Domain.Food", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<float>("Price")
+                        .HasColumnType("real");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Foods");
+                });
+
             modelBuilder.Entity("EasyOrder.API.Models.Domain.JobPosition", b =>
                 {
                     b.Property<int>("Id")
@@ -209,15 +229,12 @@ namespace EasyOrder.API.Migrations
 
                     b.HasIndex("EmployeeId");
 
-                    b.HasIndex("OrderDetailId")
-                        .IsUnique();
-
                     b.HasIndex("TableId");
 
                     b.ToTable("Orders");
                 });
 
-            modelBuilder.Entity("EasyOrder.API.Models.Domain.OrderDetails", b =>
+            modelBuilder.Entity("EasyOrder.API.Models.Domain.OrderDetail", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -233,7 +250,31 @@ namespace EasyOrder.API.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("OrderId")
+                        .IsUnique();
+
                     b.ToTable("OrderDetails");
+                });
+
+            modelBuilder.Entity("EasyOrder.API.Models.Domain.OrderDetailItem<EasyOrder.API.Models.Domain.Food>", b =>
+                {
+                    b.Property<int>("OrderDetailId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ItemId")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("ItemOfOrderId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("OrderDetailItemId")
+                        .HasColumnType("int");
+
+                    b.HasKey("OrderDetailId", "ItemId");
+
+                    b.HasIndex("ItemOfOrderId");
+
+                    b.ToTable("OrderDetailItem<Food>");
                 });
 
             modelBuilder.Entity("EasyOrder.API.Models.Domain.PaymentMethod", b =>
@@ -264,15 +305,15 @@ namespace EasyOrder.API.Migrations
                     b.Property<int>("BrandId")
                         .HasColumnType("int");
 
+                    b.Property<int?>("FoodId")
+                        .HasColumnType("int");
+
                     b.Property<int>("InStock")
                         .HasColumnType("int");
 
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("OrderDetailId")
-                        .HasColumnType("int");
 
                     b.Property<Guid>("SupplierId")
                         .HasColumnType("uniqueidentifier");
@@ -284,7 +325,7 @@ namespace EasyOrder.API.Migrations
 
                     b.HasIndex("BrandId");
 
-                    b.HasIndex("OrderDetailId");
+                    b.HasIndex("FoodId");
 
                     b.HasIndex("SupplierId");
 
@@ -479,12 +520,6 @@ namespace EasyOrder.API.Migrations
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
-                    b.HasOne("EasyOrder.API.Models.Domain.OrderDetails", "OrderDetails")
-                        .WithOne("Order")
-                        .HasForeignKey("EasyOrder.API.Models.Domain.Order", "OrderDetailId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
                     b.HasOne("EasyOrder.API.Models.Domain.Table", "Table")
                         .WithMany("Orders")
                         .HasForeignKey("TableId")
@@ -495,9 +530,35 @@ namespace EasyOrder.API.Migrations
 
                     b.Navigation("Employee");
 
-                    b.Navigation("OrderDetails");
-
                     b.Navigation("Table");
+                });
+
+            modelBuilder.Entity("EasyOrder.API.Models.Domain.OrderDetail", b =>
+                {
+                    b.HasOne("EasyOrder.API.Models.Domain.Order", "Order")
+                        .WithOne("OrderDetails")
+                        .HasForeignKey("EasyOrder.API.Models.Domain.OrderDetail", "OrderId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Order");
+                });
+
+            modelBuilder.Entity("EasyOrder.API.Models.Domain.OrderDetailItem<EasyOrder.API.Models.Domain.Food>", b =>
+                {
+                    b.HasOne("EasyOrder.API.Models.Domain.Food", "ItemOfOrder")
+                        .WithMany("OrderDetailsFoods")
+                        .HasForeignKey("ItemOfOrderId");
+
+                    b.HasOne("EasyOrder.API.Models.Domain.OrderDetail", "OrderDetail")
+                        .WithMany("Foods")
+                        .HasForeignKey("OrderDetailId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("ItemOfOrder");
+
+                    b.Navigation("OrderDetail");
                 });
 
             modelBuilder.Entity("EasyOrder.API.Models.Domain.Product", b =>
@@ -508,11 +569,9 @@ namespace EasyOrder.API.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("EasyOrder.API.Models.Domain.OrderDetails", "OrderDetails")
-                        .WithMany("Product")
-                        .HasForeignKey("OrderDetailId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
+                    b.HasOne("EasyOrder.API.Models.Domain.Food", null)
+                        .WithMany("Products")
+                        .HasForeignKey("FoodId");
 
                     b.HasOne("EasyOrder.API.Models.Domain.Supplier", "Supplier")
                         .WithMany("Products")
@@ -521,8 +580,6 @@ namespace EasyOrder.API.Migrations
                         .IsRequired();
 
                     b.Navigation("Brand");
-
-                    b.Navigation("OrderDetails");
 
                     b.Navigation("Supplier");
                 });
@@ -575,17 +632,27 @@ namespace EasyOrder.API.Migrations
                     b.Navigation("Orders");
                 });
 
+            modelBuilder.Entity("EasyOrder.API.Models.Domain.Food", b =>
+                {
+                    b.Navigation("OrderDetailsFoods");
+
+                    b.Navigation("Products");
+                });
+
             modelBuilder.Entity("EasyOrder.API.Models.Domain.JobPosition", b =>
                 {
                     b.Navigation("EmployeeJobPositions");
                 });
 
-            modelBuilder.Entity("EasyOrder.API.Models.Domain.OrderDetails", b =>
+            modelBuilder.Entity("EasyOrder.API.Models.Domain.Order", b =>
                 {
-                    b.Navigation("Order")
+                    b.Navigation("OrderDetails")
                         .IsRequired();
+                });
 
-                    b.Navigation("Product");
+            modelBuilder.Entity("EasyOrder.API.Models.Domain.OrderDetail", b =>
+                {
+                    b.Navigation("Foods");
                 });
 
             modelBuilder.Entity("EasyOrder.API.Models.Domain.PaymentMethod", b =>

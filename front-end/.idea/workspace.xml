@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8d803916-14e8-4f67-b831-294b353feb56" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../API/EasyOrder.API/.vs/EasyOrder.API/DesignTimeBuild/.dtbcache.v2" beforeDir="false" afterPath="$PROJECT_DIR$/../API/EasyOrder.API/.vs/EasyOrder.API/DesignTimeBuild/.dtbcache.v2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../API/EasyOrder.API/.vs/EasyOrder.API/FileContentIndex/344abc20-716b-4519-9603-1a5143720495.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../API/EasyOrder.API/.vs/EasyOrder.API/FileContentIndex/71a3e183-0684-47fa-a3f2-d1a8d3f68157.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../API/EasyOrder.API/.vs/EasyOrder.API/FileContentIndex/85470723-c0e1-4135-bbea-a1ba93f7df56.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../API/EasyOrder.API/.vs/EasyOrder.API/FileContentIndex/f533b9f8-81f1-492d-96c4-325b9564de99.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../API/EasyOrder.API/.vs/EasyOrder.API/FileContentIndex/fb19ac7a-0654-4b33-a413-ebc1a924b245.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../API/EasyOrder.API/.vs/EasyOrder.API/v17/.futdcache.v2" beforeDir="false" afterPath="$PROJECT_DIR$/../API/EasyOrder.API/.vs/EasyOrder.API/v17/.futdcache.v2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../API/EasyOrder.API/.vs/EasyOrder.API/v17/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/../API/EasyOrder.API/.vs/EasyOrder.API/v17/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../API/EasyOrder.API/.vs/ProjectEvaluation/easyorder.api.metadata.v7.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../API/EasyOrder.API/.vs/ProjectEvaluation/easyorder.api.metadata.v7.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../API/EasyOrder.API/.vs/ProjectEvaluation/easyorder.api.projects.v7.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../API/EasyOrder.API/.vs/ProjectEvaluation/easyorder.api.projects.v7.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../API/EasyOrder.API/EasyOrder.API/obj/Debug/net7.0/EasyOrder.API.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../API/EasyOrder.API/EasyOrder.API/obj/Debug/net7.0/EasyOrder.API.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../API/EasyOrder.API/EasyOrder.API/obj/Debug/net7.0/EasyOrder.API.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../API/EasyOrder.API/EasyOrder.API/obj/Debug/net7.0/EasyOrder.API.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../API/EasyOrder.API/EasyOrder.API/obj/Debug/net7.0/EasyOrder.API.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/../API/EasyOrder.API/EasyOrder.API/obj/Debug/net7.0/EasyOrder.API.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../API/EasyOrder.API/EasyOrder.API/obj/Debug/net7.0/EasyOrder.API.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../API/EasyOrder.API/EasyOrder.API/obj/Debug/net7.0/EasyOrder.API.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../API/EasyOrder.API/EasyOrder.API/obj/Debug/net7.0/EasyOrder.API.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../API/EasyOrder.API/EasyOrder.API/obj/Debug/net7.0/EasyOrder.API.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../API/EasyOrder.API/EasyOrder.API/obj/Debug/net7.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../API/EasyOrder.API/EasyOrder.API/obj/Debug/net7.0/apphost.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../API/EasyOrder.API/EasyOrder.API/obj/EasyOrder.API.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../API/EasyOrder.API/EasyOrder.API/obj/EasyOrder.API.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../API/EasyOrder.API/EasyOrder.API/obj/EasyOrder.API.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/../API/EasyOrder.API/EasyOrder.API/obj/EasyOrder.API.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../API/EasyOrder.API/EasyOrder.API/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/../API/EasyOrder.API/EasyOrder.API/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../API/EasyOrder.API/EasyOrder.API/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../API/EasyOrder.API/EasyOrder.API/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/easy-order/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/easy-order/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/easy-order/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/easy-order/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/easy-order/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/easy-order/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/easy-order/server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/easy-order/server.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/easy-order/src/app/app-routing.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/easy-order/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/easy-order/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/easy-order/src/app/app.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/easy-order/src/app/app.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/easy-order/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/easy-order/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/easy-order/src/app/app.module.server.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/easy-order/src/app/app.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/easy-order/src/app/data.service.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/easy-order/src/app/data.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/easy-order/src/app/header/header.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/easy-order/src/app/header/header.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/easy-order/src/app/header/header.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/easy-order/src/app/header/header.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/easy-order/src/app/home/country-getall-response.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/easy-order/src/app/home/home.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/easy-order/src/app/home/home.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/easy-order/src/app/home/home.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/easy-order/src/app/home/home.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/easy-order/src/app/my-config.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/easy-order/src/main.server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/easy-order/src/main.server.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/easy-order/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/easy-order/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/easy-order/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/easy-order/src/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/easy-order/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/easy-order/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2g6UiywmdPyAvU8GZAwvEnBGg5X" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;WorkingOnModelControllers&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\amuli\\Desktop\\RS1SEMINARSKI\\EasyOrder\\front-end\\easy-order\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8d803916-14e8-4f67-b831-294b353feb56" name="Changes" comment="" />
+      <created>1715017655649</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1715017655649</updated>
+      <workItem from="1715017658133" duration="4026000" />
+      <workItem from="1715101795196" duration="8000" />
+      <workItem from="1715101830803" duration="312000" />
+      <workItem from="1715102171246" duration="160000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

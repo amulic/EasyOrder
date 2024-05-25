@@ -12,8 +12,7 @@ namespace EasyOrder.API.Models.Domain
         public int InStock { get; set; }
         public Brand Brand { get; set; }
         public Supplier Supplier { get; set; }
-        [ForeignKey("OrderDetailId")]
-        public int OrderDetailId { get; set; }
-        public OrderDetails OrderDetails { get; set; }
+     
+        
     }
 }

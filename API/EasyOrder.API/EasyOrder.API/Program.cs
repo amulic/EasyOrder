@@ -26,7 +26,8 @@ builder.Services.AddScoped<IJobPositionRepository, JobPositionRepository>();
 builder.Services.AddScoped<IOrderRepository, OrderRepository>();
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
 builder.Services.AddScoped<ITableRepository, TableRepository>();
-
+builder.Services.AddScoped<IFoodRepository, FoodRepository>();
+builder.Services.AddScoped<ISupplierRepository, SupplierRepository>();
 // CORS
 builder.Services.AddCors(options =>
 {
@@ -61,6 +62,7 @@ app.UseHttpsRedirection();
 //CORS
 app.UseCors("AllowAllOrigins");
 
+app.UseStaticFiles();
 
 app.UseAuthorization();
 
