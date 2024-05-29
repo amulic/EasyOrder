@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "oUXKmBr+Jx5sEoYmKN9U3nKj24pZCUPgKsu+wlXlBMieTePxXmNcNLCSreFb02YSgbbmjnRG628hj1GrVgkgVA==",
+  "dgSpecHash": "PwVBBv3G6bG8iY+Tl/MF3RmExeXMnZF+m5JaLPDJ+GFZSgaPs5e6p/hnyte9+PbT0xxpMZYv/ogcsqPS4nZ/GA==",
   "success": true,
   "projectFilePath": "C:\\Users\\amuli\\Desktop\\RS1SEMINARSKI\\EasyOrder\\API\\EasyOrder.API\\EasyOrder.API\\EasyOrder.API.csproj",
   "expectedPackageFiles": [
@@ -78,10 +78,10 @@
     "C:\\Users\\amuli\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512",
     "C:\\Users\\amuli\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "C:\\Users\\amuli\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512",
-    "C:\\Users\\amuli\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.19\\microsoft.windowsdesktop.app.ref.7.0.19.nupkg.sha512",
-    "C:\\Users\\amuli\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.19\\microsoft.netcore.app.ref.7.0.19.nupkg.sha512",
-    "C:\\Users\\amuli\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.19\\microsoft.aspnetcore.app.ref.7.0.19.nupkg.sha512",
-    "C:\\Users\\amuli\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.19\\microsoft.netcore.app.host.win-x64.7.0.19.nupkg.sha512"
+    "C:\\Users\\amuli\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.20\\microsoft.windowsdesktop.app.ref.7.0.20.nupkg.sha512",
+    "C:\\Users\\amuli\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.20\\microsoft.netcore.app.ref.7.0.20.nupkg.sha512",
+    "C:\\Users\\amuli\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.20\\microsoft.aspnetcore.app.ref.7.0.20.nupkg.sha512",
+    "C:\\Users\\amuli\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.20\\microsoft.netcore.app.host.win-x64.7.0.20.nupkg.sha512"
   ],
   "logs": [
     {

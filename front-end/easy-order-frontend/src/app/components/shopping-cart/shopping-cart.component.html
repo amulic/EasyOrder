@@ -1,1 +1,45 @@
-<p>shopping-cart works!</p>
+<section class="flex justify-center items-center w-full h-full">
+  <div class="pt-3">
+    <h1>Shopping Cart</h1>
+
+    <div *ngFor="let item of cartItems" class="cart-item">
+      <div class="product-info">
+      <!--<app-item-with-icon [item]="item"></app-item-with-icon> -->
+      </div>
+      <button (click)="removeItem(item.item.id)" class="remove-button">Remove</button>
+    </div>
+
+    <hr>
+
+    <div class="total-amount">
+      <strong>Total:</strong> £{{ totalAmount }}
+    </div>
+    <p class="text-lg">Back to <a routerLink="/foods">Foods</a><br> <a routerLink="/drinks">Drinks</a></p>
+    <!--<button (click)="applyDiscount()" [disabled]="isDiscountApplied" class="add-button discount">💳 Apply Discount 10%</button>-->
+  </div>
+</section>
+
+<hlm-table class="w-full min-w-[400px]">
+  <hlm-caption>A list of your shopping cart.</hlm-caption>
+  <hlm-trow>
+    <hlm-th class="w-52">Name</hlm-th>
+    <hlm-th class="w-60">Price</hlm-th>
+    <hlm-th class="flex-1">Quantity</hlm-th>
+    <hlm-th class="justify-end w-40">Nesto</hlm-th>
+  </hlm-trow>
+  @for (item of cartItems; track item.item.id) {
+    <hlm-trow>
+      <hlm-td truncate class="font-medium w-52">{{ item.item.name }}</hlm-td>
+      <hlm-td class="w-60">{{ item.item.price }}</hlm-td>
+      <hlm-td class="flex-1">{{ item.quantity }}</hlm-td>
+      <hlm-td class="justify-end w-40">{{ item.totalPrice }}</hlm-td>
+    </hlm-trow>
+  }
+  <hlm-trow class="bg-muted/50 hover:bg-muted">
+    <hlm-td truncate class="w-[100px] font-semibold">Total</hlm-td>
+    <hlm-td class="w-40"></hlm-td>
+    <hlm-td class="flex-1"></hlm-td>
+    <hlm-td class="justify-end w-40">$2,500.00</hlm-td>
+  </hlm-trow>
+</hlm-table>
+
