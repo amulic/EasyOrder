@@ -1,12 +1,12 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\amuli\\Desktop\\RS1SEMINARSKI\\EasyOrder\\API\\EasyOrder.API\\EasyOrder.API\\wwwroot\\images\\drinkThumbnail.jpg",
+      "Id": "C:\\Users\\mulik\\Desktop\\RS1\\EasyOrder\\API\\EasyOrder.API\\EasyOrder.API\\wwwroot\\images\\drinkThumbnail.jpg",
       "PackagePath": "staticwebassets\\images\\drinkThumbnail.jpg"
     },
     {
-      "Id": "C:\\Users\\amuli\\Desktop\\RS1SEMINARSKI\\EasyOrder\\API\\EasyOrder.API\\EasyOrder.API\\wwwroot\\images\\foodThumbnail.avif",
-      "PackagePath": "staticwebassets\\images\\foodThumbnail.avif"
+      "Id": "C:\\Users\\mulik\\Desktop\\RS1\\EasyOrder\\API\\EasyOrder.API\\EasyOrder.API\\wwwroot\\images\\foodThumbnail.jpg",
+      "PackagePath": "staticwebassets\\images\\foodThumbnail.jpg"
     },
     {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.EasyOrder.API.Microsoft.AspNetCore.StaticWebAssets.props",

@@ -1,12 +1,12 @@
-import {IFood} from "./IFood";
+import type { IFood } from "./IFood";
 
-export interface ICartItem{
-  item: IFood; //ovde se dodaje | IDrink
-  quantity:number;
-  totalPrice:number;
+export interface ICartItem {
+	item: IFood; //ovde se dodaje | IDrink
+	quantity: number;
+	totalPrice: number;
 }
 
 export interface ShoppingCart {
-  items:ICartItem[];
-  totalAmount:number;
+	items: ICartItem[];
+	totalAmount: number;
 }

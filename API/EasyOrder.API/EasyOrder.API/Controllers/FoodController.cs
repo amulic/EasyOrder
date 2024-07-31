@@ -22,7 +22,7 @@ namespace EasyOrder.API.Controllers
 
         [HttpGet]
         [ProducesResponseType(200)]
-        public IActionResult GetFoods()
+        public async Task<ActionResult<Food[]>> GetFoods()
         {
             var foods = _mapper.Map<List<FoodDto>>(_foodRepository.GetFoods());
 
@@ -52,7 +52,7 @@ namespace EasyOrder.API.Controllers
         [HttpPost]
         [ProducesResponseType(204)]
         [ProducesResponseType(400)]
-        public async Task<ActionResult<Food>> CreateFood( Food foodCreate)
+        public async Task<ActionResult<Food>> CreateFood( FoodDto foodCreate)
         {
             if (foodCreate == null)
                 return BadRequest();

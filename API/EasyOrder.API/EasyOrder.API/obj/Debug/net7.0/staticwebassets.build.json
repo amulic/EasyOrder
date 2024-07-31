@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Y9+jWSXfX0NxcL1tVzPotdV8zdqJxS5qy9tG38HtTwI=",
+  "Hash": "XYaD1Db7tr5erRXwtBDtuv0MPpwjLEOSjF2O1B5P2Mw=",
   "Source": "EasyOrder.API",
   "BasePath": "_content/EasyOrder.API",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "EasyOrder.API\\wwwroot",
       "Source": "EasyOrder.API",
-      "ContentRoot": "C:\\Users\\amuli\\Desktop\\RS1SEMINARSKI\\EasyOrder\\API\\EasyOrder.API\\EasyOrder.API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\mulik\\Desktop\\RS1\\EasyOrder\\API\\EasyOrder.API\\EasyOrder.API\\wwwroot\\",
       "BasePath": "_content/EasyOrder.API",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\amuli\\Desktop\\RS1SEMINARSKI\\EasyOrder\\API\\EasyOrder.API\\EasyOrder.API\\wwwroot\\images\\drinkThumbnail.jpg",
+      "Identity": "C:\\Users\\mulik\\Desktop\\RS1\\EasyOrder\\API\\EasyOrder.API\\EasyOrder.API\\wwwroot\\images\\drinkThumbnail.jpg",
       "SourceId": "EasyOrder.API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\amuli\\Desktop\\RS1SEMINARSKI\\EasyOrder\\API\\EasyOrder.API\\EasyOrder.API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\mulik\\Desktop\\RS1\\EasyOrder\\API\\EasyOrder.API\\EasyOrder.API\\wwwroot\\",
       "BasePath": "_content/EasyOrder.API",
       "RelativePath": "images/drinkThumbnail.jpg",
       "AssetKind": "All",
@@ -36,12 +36,12 @@
       "OriginalItemSpec": "wwwroot\\images\\drinkThumbnail.jpg"
     },
     {
-      "Identity": "C:\\Users\\amuli\\Desktop\\RS1SEMINARSKI\\EasyOrder\\API\\EasyOrder.API\\EasyOrder.API\\wwwroot\\images\\foodThumbnail.avif",
+      "Identity": "C:\\Users\\mulik\\Desktop\\RS1\\EasyOrder\\API\\EasyOrder.API\\EasyOrder.API\\wwwroot\\images\\foodThumbnail.jpg",
       "SourceId": "EasyOrder.API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\amuli\\Desktop\\RS1SEMINARSKI\\EasyOrder\\API\\EasyOrder.API\\EasyOrder.API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\mulik\\Desktop\\RS1\\EasyOrder\\API\\EasyOrder.API\\EasyOrder.API\\wwwroot\\",
       "BasePath": "_content/EasyOrder.API",
-      "RelativePath": "images/foodThumbnail.avif",
+      "RelativePath": "images/foodThumbnail.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -52,7 +52,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\foodThumbnail.avif"
+      "OriginalItemSpec": "wwwroot\\images\\foodThumbnail.jpg"
     }
   ]
 }
