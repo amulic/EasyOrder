@@ -25,9 +25,9 @@ namespace EasyOrder.API.Repository
             return _context.Users.Where(x => x.Id == userId).FirstOrDefault();
         }
 
-        public ICollection<User> GetUsers()
+        public async Task<ActionResult<ICollection<User>>> GetUsers()
         {
-            return _context.Users.ToList();
+            return await _context.Users.ToListAsync();
         }
 
         public bool UserExists(int userId)

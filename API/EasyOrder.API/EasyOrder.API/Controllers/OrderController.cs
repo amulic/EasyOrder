@@ -47,31 +47,31 @@ namespace EasyOrder.API.Controllers
             return Ok(users);
         }
 
-        [HttpPost]
-        public async Task<IActionResult> CreateUser([FromBody] UserDto userCreate)
-        {
-            if (userCreate == null)
-                return BadRequest();
+        //[HttpPost]
+        //public async Task<IActionResult> CreateUser([FromBody] UserDto userCreate)
+        //{
+        //    if (userCreate == null)
+        //        return BadRequest();
 
-            var user = _userRepository.GetUsers().Where(a => a.Id == userCreate.Id).FirstOrDefault();
+        //    var user = _userRepository.GetUsers().Where(a => a.Id == userCreate.Id).FirstOrDefault();
 
-            if (user != null)
-            {
-                ModelState.AddModelError("", "User already exists.");
-                return StatusCode(422, ModelState);
-            }
+        //    if (user != null)
+        //    {
+        //        ModelState.AddModelError("", "User already exists.");
+        //        return StatusCode(422, ModelState);
+        //    }
 
-            if (!ModelState.IsValid) return BadRequest();
+        //    if (!ModelState.IsValid) return BadRequest();
 
-            var userMap = _mapper.Map<User>(userCreate);
+        //    var userMap = _mapper.Map<User>(userCreate);
 
-            if (!_userRepository.CreateUser(userMap))
-            {
-                ModelState.AddModelError("", "Something went wrong while saving.");
-                return StatusCode(500, ModelState);
-            }
+        //    if (!_userRepository.CreateUser(userMap))
+        //    {
+        //        ModelState.AddModelError("", "Something went wrong while saving.");
+        //        return StatusCode(500, ModelState);
+        //    }
 
-            return Ok("Successfully created.");
-        }
+        //    return Ok("Successfully created.");
+        //}
     }
 }

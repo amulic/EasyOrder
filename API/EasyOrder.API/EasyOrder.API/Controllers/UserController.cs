@@ -5,6 +5,7 @@ using EasyOrder.API.Models.Domain;
 using EasyOrder.API.Models.DTO;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
@@ -44,9 +45,9 @@ namespace EasyOrder.API.Controllers
 
         [HttpGet]
         [ProducesResponseType(200, Type = typeof(User))]
-        public IActionResult GetUsers()
+        public async Task<ActionResult<User>> GetUsers()
         {
-            var users = _mapper.Map<List<OrderDto>>(_userRepository.GetUsers());
+            var users = await _userRepository.GetUsers();
 
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
@@ -54,32 +55,32 @@ namespace EasyOrder.API.Controllers
             return Ok(users);
         }
 
-        [HttpPost]
-        public async Task<IActionResult> CreateOrder([FromBody]UserDto userCreate)
-        {
-            if (userCreate == null)
-                return BadRequest();
+        //[HttpPost]
+        //public async Task<IActionResult> CreateUser([FromBody]UserDto userCreate)
+        //{
+        //    if (userCreate == null)
+        //        return BadRequest();
 
-            var user = _userRepository.GetUsers().Where(a => a.Id == userCreate.Id).FirstOrDefault();
+        //    var user = _userRepository.GetUsers().Where(a => a.Id == userCreate.Id).FirstOrDefault();
 
-            if (user != null)
-            {
-                ModelState.AddModelError("", "Order already exists.");
-                return StatusCode(422, ModelState);
-            }
+        //    if (user != null)
+        //    {
+        //        ModelState.AddModelError("", "User already exists.");
+        //        return StatusCode(422, ModelState);
+        //    }
 
-            if (!ModelState.IsValid) return BadRequest();
+        //    if (!ModelState.IsValid) return BadRequest();
 
-            var userMap = _mapper.Map<User>(userCreate);
+        //    var userMap = _mapper.Map<User>(userCreate);
 
-            if (!_userRepository.CreateUser(userMap))
-            {
-                ModelState.AddModelError("", "Something went wrong while saving.");
-                return StatusCode(500, ModelState);
-            }
+        //    if (!_userRepository.CreateUser(userMap))
+        //    {
+        //        ModelState.AddModelError("", "Something went wrong while saving.");
+        //        return StatusCode(500, ModelState);
+        //    }
 
-            return Ok("Successfully created.");
-        }
+        //    return Ok("Successfully created.");
+        //}
 
 
         //JWT
@@ -98,10 +99,11 @@ namespace EasyOrder.API.Controllers
             if(!PasswordHasher.VerifyPassword(userObj.Password, user.Password))
                 return BadRequest(new {Message="Password is incorrect!"});
 
+            user.Token = CreateJwtToken(user);
 
             return Ok(new
             {
-                Token = "",
+                Token = user.Token,
                 Message = "Login Success!"
             });
         }
@@ -151,13 +153,24 @@ namespace EasyOrder.API.Controllers
         private string CreateJwtToken(User user) 
         {
             var jwtTokenHandler = new JwtSecurityTokenHandler();
-            var key = Encoding.ASCII.GetBytes("veryverySecret.....");
+            var key = Encoding.ASCII.GetBytes("this is my custom Secret key for authentication");
             var identity = new ClaimsIdentity(new Claim[]
             {
-                new Claim(ClaimTypes.Role, user.Role)
+                new Claim(ClaimTypes.Role, user.Role),
                 new Claim(ClaimTypes.Name, $"{user.Name} {user.Surname}")
+
             });
-            
+
+            var credentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256);
+
+            var tokenDescriptor = new SecurityTokenDescriptor
+            {
+                Subject = identity,
+                Expires = DateTime.Now.AddDays(1),
+                SigningCredentials = credentials
+            };
+            var token = jwtTokenHandler.CreateToken(tokenDescriptor);
+            return jwtTokenHandler.WriteToken(token);
         }
     }
 }
