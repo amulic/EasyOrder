@@ -1,0 +1,41 @@
+<div className="w-full h-full justify-center items-center mt-2 pt-10" >
+<form [formGroup]="loginForm" class="max-w-sm mx-auto mt-20 border rounded-lg p-5 border-black">
+  <div>
+    <label hlmLabel for="username" class="block mb-2 text-md font-normal  ">Username</label>
+    <input formControlName="username" type="username" id="username" class="bg-black border text-gray-400 border-gray-300  text-sm rounded-lg focus:ring-gray-100 focus:border-gray-100 block w-full p-2.5 dark:border-gray-600 dark:placeholder-white-60 dark:text-white dark:focus:ring-gray-100 dark:focus:border-gray-100 dark:focus-within:text-gray-50" required />
+  </div>
+  <small *ngIf="loginForm.controls['username'].dirty && loginForm.hasError('required', 'username')" class="text-red-600">*Username is required</small>
+  <div class="mb-5 mt-5">
+    <label hlmLabel for="password" class="block mb-2 text-md font-medium">Password</label>
+    <div class="relative flex items-center justify-end text-gray-400 focus-within:text-gray-50">
+      <input formControlName="password" [type]="type" id="password" class="pr-3 pl-3 bg-black border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-gray-100 focus:border-gray-100 block w-full p-2.5 dark:bg-black dark:border-gray-600 dark:placeholder-white-60 dark:text-white dark:focus:ring-gray-100 dark:focus:border-gray-100" required />
+      <hlm-icon [name]="eyeIcon" size="sm" (click)="hideShowPass()" class="absolute w-5 h-5 ml-3 mr-3 pointer-events-auto"/>
+    </div> 
+    <small *ngIf="loginForm.controls['password'].dirty && loginForm.hasError('required', 'password')" class="text-red-600">*Password is required</small>
+  </div>
+  <div class="flex items-start mb-5">
+    <div class="flex items-center h-5">
+    </div>
+    <a id="remember" class="text-blue-500 ">Forgot password?</a> 
+   
+  </div>
+  <button hlmBtn (click)="onSubmit()" type="submit" class="text-white ">Login</button>
+  <div class="text-center pt-4 relative">Don't have an account? 
+    <a routerLink="/signup" class="underline cursor-pointer text-blue-500">Sign up!</a>
+  </div>
+</form>
+  <div class="relative flex items-center justify-center max-w-sm mx-auto vdh mt-1 border-dotted rounded-lg p-4 border-black border">
+    <a href="https://www.google.com" target="_blank" class="px-2"><img src="https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-suite-everything-you-need-know-about-google-newest-0.png" alt="google" class="h-10"></a>
+    <p class="pt-2 px-2 mb-2">Log in with Google!</p>
+  </div>
+</div>
+
+<div class="error-container">
+  <div hlmAlert *ngIf="this.showAlert" variant="destructive" class="transition ease-in-out">
+    <hlm-icon hlmAlertIcon name="lucideAlertTriangle" />
+    <h4 hlmAlertTitle>Unexpected Error</h4>
+    <p hlmAlertDesc>Wrong login parameters, please try again!</p>
+  </div>
+</div>
+
+<p-toast></p-toast>

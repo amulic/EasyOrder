@@ -8,10 +8,14 @@ using EasyOrder.API.Interface;
 using EasyOrder.API.Repository;
 using System.Web.Http;
 using System.Web.Http.Cors;
+using Microsoft.AspNetCore.Identity;
+using EasyOrder.API.Models.Domain;
+using System.IdentityModel.Tokens.Jwt;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-
 builder.Services.AddControllers();
 builder.Services.AddControllers().AddJsonOptions(x => x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
@@ -28,6 +32,10 @@ builder.Services.AddScoped<IProductRepository, ProductRepository>();
 builder.Services.AddScoped<ITableRepository, TableRepository>();
 builder.Services.AddScoped<IFoodRepository, FoodRepository>();
 builder.Services.AddScoped<ISupplierRepository, SupplierRepository>();
+
+//JWT Identity
+
+
 // CORS
 builder.Services.AddCors(options =>
 {
@@ -59,11 +67,16 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+
+
 //CORS
 app.UseCors("AllowAllOrigins");
 
+
+
 app.UseStaticFiles();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();

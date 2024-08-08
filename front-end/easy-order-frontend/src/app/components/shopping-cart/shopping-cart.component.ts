@@ -1,6 +1,6 @@
 import { Component } from "@angular/core";
 import { NgForOf } from "@angular/common";
-import { CartService } from "../../services/cart.service";
+import { CartService } from "../../services/cart/cart.service";
 import { ICartItem } from "../../models/ICartItem";
 import {
 	HlmCaptionComponent,

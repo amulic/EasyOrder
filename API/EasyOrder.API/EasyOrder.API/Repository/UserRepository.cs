@@ -1,6 +1,8 @@
 ﻿using EasyOrder.API.Data;
 using EasyOrder.API.Interface;
 using EasyOrder.API.Models.Domain;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace EasyOrder.API.Repository
 {
@@ -37,5 +39,22 @@ namespace EasyOrder.API.Repository
             var saved = _context.SaveChanges();
             return saved > 0 ? true : false;
         }
+
+        public async Task<User> AuthenticateUser(string username, string password)
+        {
+            return await _context.Users.FirstOrDefaultAsync(x => x.Username == username);
+        }
+        public async Task CreateUserAsync(User user)
+        {
+            Console.WriteLine(user.Username);
+            await _context.AddAsync(user);
+            await _context.SaveChangesAsync();
+            return;
+        }
+
+        public Task<bool> CheckUsernameExistAsync(string username) => _context.Users.AnyAsync(x => x.Username == username);
+
+        public Task<bool> CheckEmailExistAsync(string email) => _context.Users.AnyAsync(y => y.Email == email);
+       
     }
 }

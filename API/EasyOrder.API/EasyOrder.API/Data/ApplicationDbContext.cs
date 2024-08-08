@@ -1,4 +1,5 @@
 ﻿using EasyOrder.API.Models.Domain;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace EasyOrder.API.Data
@@ -87,16 +88,16 @@ namespace EasyOrder.API.Data
                 .HasForeignKey(e => e.CityId);
 
 
-            modelBuilder.Entity<User>()
-                .HasOne(e => e.Administrator)
-                .WithOne(e => e.User)
-                .HasForeignKey<Administrator>(e => e.Id)
-                .IsRequired();
-            modelBuilder.Entity<User>()
-                .HasOne(e => e.Employee)
-                .WithOne(e => e.User)
-                .HasForeignKey<Employee>(e => e.Id)
-                .IsRequired();
+            //modelBuilder.Entity<User>()
+            //    .HasOne(e => e.Administrator)
+            //    .WithOne(e => e.User)
+            //    .HasForeignKey<Administrator>(e => e.Id)
+            //    .IsRequired();
+            //modelBuilder.Entity<User>()
+            //    .HasOne(e => e.Employee)
+            //    .WithOne(e => e.User)
+            //    .HasForeignKey<Employee>(e => e.Id)
+            //    .IsRequired();
 
             modelBuilder.Entity<EmployeeJobPosition>()
                 .HasKey(jpe => new { jpe.EmployeeId, jpe.JobPositionId });
@@ -109,6 +110,9 @@ namespace EasyOrder.API.Data
                 .WithMany(e => e.EmployeeJobPositions)
                 .HasForeignKey(e => e.JobPositionId);
 
+            //modelBuilder.Entity<User>().ToTable("users");
+
+            base.OnModelCreating(modelBuilder);
         }
     }
 }

@@ -1,9 +1,14 @@
 ﻿using AutoMapper;
+using EasyOrder.API.Helper;
 using EasyOrder.API.Interface;
 using EasyOrder.API.Models.Domain;
 using EasyOrder.API.Models.DTO;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using System.Text;
+using System.Text.RegularExpressions;
 
 namespace EasyOrder.API.Controllers
 {
@@ -12,50 +17,50 @@ namespace EasyOrder.API.Controllers
     public class UserController : ControllerBase
     {
 
-        private IOrderRepository _orderRepository;
+        private IUserRepository _userRepository;
         private IMapper _mapper;
 
-        public UserController(IOrderRepository orderRepository, IMapper mapper)
+        public UserController(IUserRepository userRepository, IMapper mapper)
         {
-            _orderRepository = orderRepository;
+            _userRepository = userRepository;
             _mapper = mapper;
         }
 
-        [HttpGet("{orderId}")]
-        [ProducesResponseType(200, Type = typeof(Order))]
+        [HttpGet("{userId}")]
+        [ProducesResponseType(200, Type = typeof(User))]
         [ProducesResponseType(400)]
-        public IActionResult GetOrder(int orderId)
+        public IActionResult GetOrder(int userId)
         {
-            if (!_orderRepository.OrderExists(orderId))
+            if (!_userRepository.UserExists(userId))
                 return NotFound();
 
-            var order = _mapper.Map<OrderDto>(_orderRepository.GetOrder(orderId));
+            var user = _mapper.Map<OrderDto>(_userRepository.GetUser(userId));
 
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            return Ok(order);
+            return Ok(user);
         }
 
         [HttpGet]
-        [ProducesResponseType(200, Type = typeof(Order))]
-        public IActionResult GetOrders()
+        [ProducesResponseType(200, Type = typeof(User))]
+        public IActionResult GetUsers()
         {
-            var orders = _mapper.Map<List<OrderDto>>(_orderRepository.GetOrders());
+            var users = _mapper.Map<List<OrderDto>>(_userRepository.GetUsers());
 
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            return Ok(orders);
+            return Ok(users);
         }
 
         [HttpPost]
-        public async Task<IActionResult> CreateOrder([FromBody]OrderDto orderCreate)
+        public async Task<IActionResult> CreateOrder([FromBody]UserDto userCreate)
         {
-            if (orderCreate == null)
+            if (userCreate == null)
                 return BadRequest();
 
-            var user = _orderRepository.GetOrders().Where(a => a.Id == orderCreate.Id).FirstOrDefault();
+            var user = _userRepository.GetUsers().Where(a => a.Id == userCreate.Id).FirstOrDefault();
 
             if (user != null)
             {
@@ -65,15 +70,94 @@ namespace EasyOrder.API.Controllers
 
             if (!ModelState.IsValid) return BadRequest();
 
-            var orderMap = _mapper.Map<Order>(orderCreate);
+            var userMap = _mapper.Map<User>(userCreate);
 
-            if (!_orderRepository.CreateOrder(orderMap))
+            if (!_userRepository.CreateUser(userMap))
             {
                 ModelState.AddModelError("", "Something went wrong while saving.");
                 return StatusCode(500, ModelState);
             }
 
             return Ok("Successfully created.");
+        }
+
+
+        //JWT
+
+        [HttpPost("authenticate")]
+        public async Task<IActionResult> Authenticate([FromBody] User userObj)
+        {
+            if (userObj == null)
+                return BadRequest();
+
+            var user = await _userRepository.AuthenticateUser(userObj.Username, userObj.Password);
+
+            if (user == null)
+                return NotFound(new { Message = "User Not Found!" });
+
+            if(!PasswordHasher.VerifyPassword(userObj.Password, user.Password))
+                return BadRequest(new {Message="Password is incorrect!"});
+
+
+            return Ok(new
+            {
+                Token = "",
+                Message = "Login Success!"
+            });
+        }
+
+        [HttpPost("register")]
+        public async Task<IActionResult> RegisterUser([FromBody] User userObj)
+        {
+            if(userObj == null)
+                return BadRequest();
+
+            //checking username
+            if(await _userRepository.CheckUsernameExistAsync(userObj.Username))
+                return BadRequest(new { Message = "Username already exists!" });
+            //checking email
+            if (await _userRepository.CheckEmailExistAsync(userObj.Email))
+                return BadRequest(new { Message = "Email already exists!" });
+            //checking password strenght
+            var pass = CheckPasswordStrenght(userObj.Password);
+            if(!string.IsNullOrEmpty(pass))
+                return BadRequest(new {Message = pass});
+
+            userObj.Password = PasswordHasher.HashPassword(userObj.Password);
+            userObj.Role = "User";
+            userObj.Token = "";
+            await _userRepository.CreateUserAsync(userObj);
+            
+            return Ok(new
+            {
+                Message = "User Registered!"
+            });
+        }
+
+        private string CheckPasswordStrenght(string password)
+        {
+            StringBuilder sb = new StringBuilder();
+            if(password.Length < 8)
+                sb.Append("Minimum password lenght should be 8."+ Environment.NewLine);
+            if(!(Regex.IsMatch(password, "[a-z]") && Regex.IsMatch(password,"[A-Z]") && Regex.IsMatch(password, "[0-9]")))
+                sb.Append("Password should be Alphanumeric." + Environment.NewLine);
+            if (!Regex.IsMatch(password, "[<,>,@,!,#,$,%,^,&,*,(,),_,+\\[,\\],{,},?,:,;,|,',\\,.,/,~,`,-,=]"))
+                sb.Append("Password should contain a special character." + Environment.NewLine);
+
+            return sb.ToString();
+            
+        }
+
+        private string CreateJwtToken(User user) 
+        {
+            var jwtTokenHandler = new JwtSecurityTokenHandler();
+            var key = Encoding.ASCII.GetBytes("veryverySecret.....");
+            var identity = new ClaimsIdentity(new Claim[]
+            {
+                new Claim(ClaimTypes.Role, user.Role)
+                new Claim(ClaimTypes.Name, $"{user.Name} {user.Surname}")
+            });
+            
         }
     }
 }

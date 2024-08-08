@@ -17,7 +17,7 @@ namespace EasyOrder.API.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "7.0.14")
+                .HasAnnotation("ProductVersion", "7.0.20")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
@@ -25,12 +25,20 @@ namespace EasyOrder.API.Migrations
             modelBuilder.Entity("EasyOrder.API.Models.Domain.Administrator", b =>
                 {
                     b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<int>("PIN")
                         .HasColumnType("int");
 
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("UserId");
 
                     b.ToTable("Administrators");
                 });
@@ -123,7 +131,10 @@ namespace EasyOrder.API.Migrations
             modelBuilder.Entity("EasyOrder.API.Models.Domain.Employee", b =>
                 {
                     b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Address")
                         .IsRequired()
@@ -135,12 +146,17 @@ namespace EasyOrder.API.Migrations
                     b.Property<DateTime>("EmploymentDate")
                         .HasColumnType("datetime2");
 
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
                     b.Property<int>("WorkExperienceInHours")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
 
                     b.HasIndex("CityId");
+
+                    b.HasIndex("UserId");
 
                     b.ToTable("Employees");
                 });
@@ -167,6 +183,10 @@ namespace EasyOrder.API.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("ImageLink")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -403,19 +423,22 @@ namespace EasyOrder.API.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Email")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("FirstName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("LastName")
-                        .IsRequired()
+                    b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Password")
                         .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Role")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Surname")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Token")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Username")
@@ -430,8 +453,8 @@ namespace EasyOrder.API.Migrations
             modelBuilder.Entity("EasyOrder.API.Models.Domain.Administrator", b =>
                 {
                     b.HasOne("EasyOrder.API.Models.Domain.User", "User")
-                        .WithOne("Administrator")
-                        .HasForeignKey("EasyOrder.API.Models.Domain.Administrator", "Id")
+                        .WithMany()
+                        .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -477,8 +500,8 @@ namespace EasyOrder.API.Migrations
                         .IsRequired();
 
                     b.HasOne("EasyOrder.API.Models.Domain.User", "User")
-                        .WithOne("Employee")
-                        .HasForeignKey("EasyOrder.API.Models.Domain.Employee", "Id")
+                        .WithMany()
+                        .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -670,13 +693,6 @@ namespace EasyOrder.API.Migrations
                     b.Navigation("Orders");
 
                     b.Navigation("Rating");
-                });
-
-            modelBuilder.Entity("EasyOrder.API.Models.Domain.User", b =>
-                {
-                    b.Navigation("Administrator");
-
-                    b.Navigation("Employee");
                 });
 #pragma warning restore 612, 618
         }

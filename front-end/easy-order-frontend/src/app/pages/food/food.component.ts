@@ -7,11 +7,11 @@ import {
   HlmCardHeaderDirective,
   HlmCardTitleDirective,
 } from '@spartan-ng/ui-card-helm';
-import {FoodService} from "../../services/food.service";
+import {FoodService} from "../../services/food/food.service";
 import {IFood} from "../../models/IFood";
 import {NgForOf} from "@angular/common";
 import {HlmButtonDirective} from "@spartan-ng/ui-button-helm";
-import { CartService } from '../../services/cart.service';
+import { CartService } from '../../services/cart/cart.service';
 import { ICartItem } from '../../models/ICartItem';
 @Component({
   selector: 'app-food',
@@ -50,7 +50,6 @@ export class FoodComponent {
   constructor(private foodService:FoodService, private cartService:CartService) {
       this.foodService.getAllFoods().subscribe((response)=>{
         this.foodsList=response;
-
       })
   }
 }

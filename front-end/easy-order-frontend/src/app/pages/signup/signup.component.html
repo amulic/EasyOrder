@@ -1,0 +1,49 @@
+<div className="w-full h-full justify-center items-center mt-2 pt-10" >
+    <form [formGroup]="signUpForm" class="max-w-sm mx-auto mt-20 border rounded-lg p-5 border-black">
+        <div >
+            <label hlmLabel for="name" class="block mb-2 text-md font-normal  ">Name</label>
+            <input formControlName="name" type="text" id="name" class="bg-black border text-gray-400 border-gray-300  text-sm rounded-lg focus:ring-gray-100 focus:border-gray-100 block w-full p-2.5 dark:border-gray-600 dark:placeholder-white-60 dark:text-white dark:focus:ring-gray-100 dark:focus:border-gray-100 dark:focus-within:text-gray-50" required />
+        </div>
+        <small *ngIf="signUpForm.controls['name'].dirty && signUpForm.hasError('required', 'name')" class="text-red-600">*Name is required</small>
+
+        <div class="mt-5 ">
+            <label hlmLabel for="surname" class="block mb-2 text-md font-normal  ">Surname</label>
+            <input formControlName="surname" type="text" id="surname" class="bg-black border text-gray-400 border-gray-300  text-sm rounded-lg focus:ring-gray-100 focus:border-gray-100 block w-full p-2.5 dark:border-gray-600 dark:placeholder-white-60 dark:text-white dark:focus:ring-gray-100 dark:focus:border-gray-100 dark:focus-within:text-gray-50" required />
+        </div>
+        <small *ngIf="signUpForm.controls['surname'].dirty && signUpForm.hasError('required', 'surname')" class="text-red-600">*Surname is required</small>
+
+      <div class="mt-5 ">
+        <label hlmLabel for="email" class="block mb-2 text-md font-normal  ">Email</label>
+        <input formControlName="email" type="email" id="email" class="bg-black border text-gray-400 border-gray-300  text-sm rounded-lg focus:ring-gray-100 focus:border-gray-100 block w-full p-2.5 dark:border-gray-600 dark:placeholder-white-60 dark:text-white dark:focus:ring-gray-100 dark:focus:border-gray-100 dark:focus-within:text-gray-50" placeholder="name@email.com" required />
+      </div>
+      <small *ngIf="signUpForm.controls['email'].dirty && signUpForm.hasError('required', 'email')" class="text-red-600">*Email is required</small>
+
+      <div class="mt-5 ">
+        <label hlmLabel for="username" class="block mb-2 text-md font-normal  ">Username</label>
+        <input formControlName="username" type="text" id="username" class="bg-black border text-gray-400 border-gray-300  text-sm rounded-lg focus:ring-gray-100 focus:border-gray-100 block w-full p-2.5 dark:border-gray-600 dark:placeholder-white-60 dark:text-white dark:focus:ring-gray-100 dark:focus:border-gray-100 dark:focus-within:text-gray-50" required />
+      </div>
+      <small *ngIf="signUpForm.controls['username'].dirty && signUpForm.hasError('required', 'username')" class="text-red-600">*Username is required</small>
+
+      <div class="mt-5">
+        <label hlmLabel for="password" class="block mb-2 text-md font-medium">Password</label>
+        <div class="relative flex items-center justify-end text-gray-400 focus-within:text-gray-50">
+            <input formControlName="password" [type]="type" id="password" class="pr-3 pl-3 bg-black border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-gray-100 focus:border-gray-100 block w-full p-2.5 dark:bg-black dark:border-gray-600 dark:placeholder-white-60 dark:text-white dark:focus:ring-gray-100 dark:focus:border-gray-100" required />
+            <hlm-icon [name]="eyeIcon" size="sm" (click)="hideShowPass()" class="absolute w-5 h-5 ml-3 mr-3 pointer-events-auto"/>
+          </div> 
+        <small *ngIf="signUpForm.controls['password'].dirty && signUpForm.hasError('required', 'password')" class="text-red-600 mb-5">*Password is required</small>
+
+      </div>
+      <p class="text-sm mt-5">All done? Click the button below to make your account!</p>
+      <button hlmBtn (click)="onSignUp()" type="submit" class="text-white w-full mt-2">Sign Up</button>
+      <p class="text mt-2">Already have an account? <a routerLink="/login" class="underline cursor-pointer text-blue-500" >Log In</a></p>
+    </form>
+      
+</div>
+
+<div class="error-container">
+  <div hlmAlert *ngIf="this.showAlert" variant="destructive" class="transition ease-in-out">
+    <hlm-icon hlmAlertIcon name="lucideAlertTriangle" />
+    <h4 hlmAlertTitle>Unexpected Error</h4>
+    <p hlmAlertDesc>Wrong login parameters, please try again!</p>
+  </div>
+</div>

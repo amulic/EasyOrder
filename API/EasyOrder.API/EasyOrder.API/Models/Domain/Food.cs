@@ -11,7 +11,7 @@ namespace EasyOrder.API.Models.Domain
         public string Name { get; set; }
         public float Price { get; set; }
         //vjerv treba image property
-
+        public string ImageLink { get; set; }
         
         public ICollection<Product> Products { get; set; }
         
