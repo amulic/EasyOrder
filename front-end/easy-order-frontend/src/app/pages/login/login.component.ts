@@ -13,7 +13,7 @@ import {
   HlmAlertTitleDirective,
 } from '@spartan-ng/ui-alert-helm';
 import ValidateForm from '../../helpers/validateForm';
-import { AuthService } from '../../services/auth.service';
+import { AuthService } from '../../services/auth/auth.service';
 import { ToastModule } from 'primeng/toast';
 import { MessageService } from 'primeng/api';
 
@@ -55,10 +55,12 @@ export class LoginComponent implements OnInit {
   
   onSubmit() {
     if(this.loginForm.valid) {
-      this.auth.login(this.loginForm.value).subscribe((response) => {
+      this.auth.signIn(this.loginForm.value).subscribe((response) => {
+        this.loginForm.reset();
+        this.auth.storeToken(response.token);
         alert(response.message);
         this.messageService.add({severity: 'success', summary:  'Logged in successfully!', detail: response.message });
-        //this.router.navigate(['home'])
+        this.router.navigate(['home'])
       }, (err) => {
         alert(err?.error.message);
       })

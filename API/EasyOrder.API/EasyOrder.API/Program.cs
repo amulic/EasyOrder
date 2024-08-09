@@ -83,12 +83,8 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-
-
 //CORS
 app.UseCors("AllowAllOrigins");
-
-
 
 app.UseStaticFiles();
 

@@ -1,10 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import {HlmIconComponent, HlmIconModule, provideIcons} from "@spartan-ng/ui-icon-helm";
 import {RouterLink, RouterLinkActive} from "@angular/router";
 import {NgIconsModule} from "@ng-icons/core";
-import {lucideLogIn, lucideShoppingCart} from "@ng-icons/lucide"; //ne ucitava iz spartana ikone, ne znam sto
+import {lucideLogIn, lucideShoppingCart} from "@ng-icons/lucide";
+import { HlmButtonDirective } from '@spartan-ng/ui-button-helm';
+import { AuthService } from '../../services/auth/auth.service';
 @Component({
-  imports: [HlmIconComponent, HlmIconModule, RouterLink, RouterLinkActive],
+  imports: [HlmIconComponent, HlmIconModule, RouterLink, RouterLinkActive, HlmButtonDirective],
   selector: 'app-header',
   standalone: true,
   styleUrl: './header.component.css',
@@ -13,4 +15,13 @@ import {lucideLogIn, lucideShoppingCart} from "@ng-icons/lucide"; //ne ucitava i
 })
 export class HeaderComponent {
 
+  loggedIn:boolean = false;
+  
+  constructor(private auth:AuthService) {
+  }
+  
+
+  logout() {
+    this.auth.signOut();
+  }
 }

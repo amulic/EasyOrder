@@ -3,6 +3,7 @@ using EasyOrder.API.Helper;
 using EasyOrder.API.Interface;
 using EasyOrder.API.Models.Domain;
 using EasyOrder.API.Models.DTO;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
@@ -43,6 +44,7 @@ namespace EasyOrder.API.Controllers
             return Ok(user);
         }
 
+        [Authorize]
         [HttpGet]
         [ProducesResponseType(200, Type = typeof(User))]
         public async Task<ActionResult<User>> GetUsers()

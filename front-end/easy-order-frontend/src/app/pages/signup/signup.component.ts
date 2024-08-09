@@ -14,7 +14,7 @@ import {
   HlmAlertTitleDirective,
 } from '@spartan-ng/ui-alert-helm';
 import ValidateForm from '../../helpers/validateForm';
-import { AuthService } from '../../services/auth.service';
+import { AuthService } from '../../services/auth/auth.service';
 @Component({
   selector: 'app-signup',
   standalone: true,

@@ -7,6 +7,7 @@ import { ShoppingCartComponent } from "./components/shopping-cart/shopping-cart.
 import { AboutUsComponent } from "./pages/about/about-us/about-us.component";
 import { LoginComponent } from "./pages/login/login.component";
 import { SignupComponent } from "./pages/signup/signup.component";
+import { authGuard } from "./guards/auth.guard";
 
 export const routes: Routes = [
 	{
@@ -21,10 +22,12 @@ export const routes: Routes = [
 	{
 		path: "drink",
 		component: DrinksComponent,
+		canActivate:[authGuard]
 	},
 	{
 		path: "food",
 		component: FoodComponent,
+		canActivate: [authGuard]
 	},
 	{
 		path: "cart",
