@@ -8,6 +8,7 @@ import { AboutUsComponent } from "./pages/about/about-us/about-us.component";
 import { LoginComponent } from "./pages/login/login.component";
 import { SignupComponent } from "./pages/signup/signup.component";
 import { authGuard } from "./guards/auth.guard";
+import { NewItemComponent } from "./pages/new-item/new-item.component";
 
 export const routes: Routes = [
 	{
@@ -44,6 +45,10 @@ export const routes: Routes = [
 	{
 		path: "signup",
 		component: SignupComponent,
+	},
+	{
+		path: "new-item",
+		component: NewItemComponent,
 	},
 	{
 		path: "**",

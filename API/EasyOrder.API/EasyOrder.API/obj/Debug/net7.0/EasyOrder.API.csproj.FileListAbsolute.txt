@@ -90,7 +90,6 @@ C:\Users\mulik\Desktop\RS1\EasyOrder\API\EasyOrder.API\EasyOrder.API\obj\Debug\n
 C:\Users\mulik\Desktop\RS1\EasyOrder\API\EasyOrder.API\EasyOrder.API\obj\Debug\net7.0\EasyOrder.API.csproj.CoreCompileInputs.cache
 C:\Users\mulik\Desktop\RS1\EasyOrder\API\EasyOrder.API\EasyOrder.API\obj\Debug\net7.0\EasyOrder.API.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\mulik\Desktop\RS1\EasyOrder\API\EasyOrder.API\EasyOrder.API\obj\Debug\net7.0\EasyOrder.API.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\mulik\Desktop\RS1\EasyOrder\API\EasyOrder.API\EasyOrder.API\obj\Debug\net7.0\EasyOrder.API.sourcelink.json
 C:\Users\mulik\Desktop\RS1\EasyOrder\API\EasyOrder.API\EasyOrder.API\bin\Debug\net7.0\appsettings.Development.json
 C:\Users\mulik\Desktop\RS1\EasyOrder\API\EasyOrder.API\EasyOrder.API\bin\Debug\net7.0\appsettings.json
 C:\Users\mulik\Desktop\RS1\EasyOrder\API\EasyOrder.API\EasyOrder.API\bin\Debug\net7.0\EasyOrder.API.staticwebassets.runtime.json

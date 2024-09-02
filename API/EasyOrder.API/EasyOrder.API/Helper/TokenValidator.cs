@@ -31,6 +31,7 @@ namespace EasyOrder.API.Helper
             {
                 var principal = handler.ValidateToken(token, validationParameters, out _);
                 var userId = principal.Claims.FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier)?.Value;
+                Console.WriteLine("${ userId}");
                 if(principal != null && userId != null)
                     return Int32.Parse(userId);
             }

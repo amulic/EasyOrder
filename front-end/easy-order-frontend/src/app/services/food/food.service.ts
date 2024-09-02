@@ -13,6 +13,6 @@ export class FoodService {
   constructor(private httpC:HttpClient) { }
 
   getAllFoods() :Observable<IFood[]> {
-    return this.httpC.get<IFood[]>(`${this.url}Food`);
+    return this.httpC.get<IFood[]>(`${this.url}Food`, {withCredentials:true});
   }
 }

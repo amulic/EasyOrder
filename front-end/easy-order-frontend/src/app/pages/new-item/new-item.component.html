@@ -1,1 +1,21 @@
-<p>new-item works!</p>
+
+<div className="w-full h-full justify-center items-center mt-2 pt-10" >
+    <form [formGroup]="newItemForm" class="max-w-sm mx-auto mt-20 border rounded-lg p-5 border-black">
+        <div >
+            <label hlmLabel for="name" class="block mb-2 text-md font-normal  ">Name</label>
+            <input formControlName="name" type="text" id="name" class="bg-black border text-gray-400 border-gray-300  text-sm rounded-lg focus:ring-gray-100 focus:border-gray-100 block w-full p-2.5 dark:border-gray-600 dark:placeholder-white-60 dark:text-white dark:focus:ring-gray-100 dark:focus:border-gray-100 dark:focus-within:text-gray-50" required />
+        </div>
+        <small *ngIf="newItemForm.controls['name'].dirty && newItemForm.hasError('required', 'name')" class="text-red-600">*Name is required</small>
+
+        <div class="mt-5 ">
+            <label hlmLabel for="price" class="block mb-2 text-md font-normal  ">Price</label>
+            <input formControlName="price" type="text" id="price" class="bg-black border text-gray-400 border-gray-300  text-sm rounded-lg focus:ring-gray-100 focus:border-gray-100 block w-full p-2.5 dark:border-gray-600 dark:placeholder-white-60 dark:text-white dark:focus:ring-gray-100 dark:focus:border-gray-100 dark:focus-within:text-gray-50" required />
+        </div>
+        <small *ngIf="newItemForm.controls['surname'].dirty && newItemForm.hasError('required', 'surname')" class="text-red-600">*Surname is required</small>
+
+      <p class="text-sm mt-5">All done? Click the button below to make your account!</p>
+      <button hlmBtn (click)="addItem()" type="submit" class="text-white w-full mt-2">Sign Up</button>
+      <p class="text mt-2">Already have an account? <a routerLink="/login" class="underline cursor-pointer text-blue-500" >Log In</a></p>
+    </form>
+      
+</div>

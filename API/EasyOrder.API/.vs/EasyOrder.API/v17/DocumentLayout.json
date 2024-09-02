@@ -7,36 +7,36 @@
       "RelativeMoniker": "D:0:0:{938F09D2-86B9-46B5-9187-7FD18D89263D}|EasyOrder.API\\EasyOrder.API.csproj|solutionrelative:easyorder.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{938F09D2-86B9-46B5-9187-7FD18D89263D}|EasyOrder.API\\EasyOrder.API.csproj|c:\\users\\mulik\\desktop\\rs1\\easyorder\\api\\easyorder.api\\easyorder.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{938F09D2-86B9-46B5-9187-7FD18D89263D}|EasyOrder.API\\EasyOrder.API.csproj|solutionrelative:easyorder.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{938F09D2-86B9-46B5-9187-7FD18D89263D}|EasyOrder.API\\EasyOrder.API.csproj|c:\\users\\mulik\\desktop\\rs1\\easyorder\\api\\easyorder.api\\easyorder.api\\interface\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{938F09D2-86B9-46B5-9187-7FD18D89263D}|EasyOrder.API\\EasyOrder.API.csproj|solutionrelative:easyorder.api\\interface\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{938F09D2-86B9-46B5-9187-7FD18D89263D}|EasyOrder.API\\EasyOrder.API.csproj|c:\\users\\mulik\\desktop\\rs1\\easyorder\\api\\easyorder.api\\easyorder.api\\models\\domain\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{938F09D2-86B9-46B5-9187-7FD18D89263D}|EasyOrder.API\\EasyOrder.API.csproj|solutionrelative:easyorder.api\\models\\domain\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{938F09D2-86B9-46B5-9187-7FD18D89263D}|EasyOrder.API\\EasyOrder.API.csproj|c:\\users\\mulik\\desktop\\rs1\\easyorder\\api\\easyorder.api\\easyorder.api\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{938F09D2-86B9-46B5-9187-7FD18D89263D}|EasyOrder.API\\EasyOrder.API.csproj|solutionrelative:easyorder.api\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{938F09D2-86B9-46B5-9187-7FD18D89263D}|EasyOrder.API\\EasyOrder.API.csproj|c:\\users\\mulik\\desktop\\rs1\\easyorder\\api\\easyorder.api\\easyorder.api\\helper\\passwordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{938F09D2-86B9-46B5-9187-7FD18D89263D}|EasyOrder.API\\EasyOrder.API.csproj|solutionrelative:easyorder.api\\helper\\passwordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{938F09D2-86B9-46B5-9187-7FD18D89263D}|EasyOrder.API\\EasyOrder.API.csproj|c:\\users\\mulik\\desktop\\rs1\\easyorder\\api\\easyorder.api\\easyorder.api\\interface\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{938F09D2-86B9-46B5-9187-7FD18D89263D}|EasyOrder.API\\EasyOrder.API.csproj|solutionrelative:easyorder.api\\interface\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{938F09D2-86B9-46B5-9187-7FD18D89263D}|EasyOrder.API\\EasyOrder.API.csproj|c:\\users\\mulik\\desktop\\rs1\\easyorder\\api\\easyorder.api\\easyorder.api\\models\\domain\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{938F09D2-86B9-46B5-9187-7FD18D89263D}|EasyOrder.API\\EasyOrder.API.csproj|solutionrelative:easyorder.api\\models\\domain\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{938F09D2-86B9-46B5-9187-7FD18D89263D}|EasyOrder.API\\EasyOrder.API.csproj|c:\\users\\mulik\\desktop\\rs1\\easyorder\\api\\easyorder.api\\easyorder.api\\helper\\tokenvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{938F09D2-86B9-46B5-9187-7FD18D89263D}|EasyOrder.API\\EasyOrder.API.csproj|solutionrelative:easyorder.api\\helper\\tokenvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{938F09D2-86B9-46B5-9187-7FD18D89263D}|EasyOrder.API\\EasyOrder.API.csproj|c:\\users\\mulik\\desktop\\rs1\\easyorder\\api\\easyorder.api\\easyorder.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{938F09D2-86B9-46B5-9187-7FD18D89263D}|EasyOrder.API\\EasyOrder.API.csproj|solutionrelative:easyorder.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{938F09D2-86B9-46B5-9187-7FD18D89263D}|EasyOrder.API\\EasyOrder.API.csproj|c:\\users\\mulik\\desktop\\rs1\\easyorder\\api\\easyorder.api\\easyorder.api\\models\\domain\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{938F09D2-86B9-46B5-9187-7FD18D89263D}|EasyOrder.API\\EasyOrder.API.csproj|solutionrelative:easyorder.api\\models\\domain\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{938F09D2-86B9-46B5-9187-7FD18D89263D}|EasyOrder.API\\EasyOrder.API.csproj|c:\\users\\mulik\\desktop\\rs1\\easyorder\\api\\easyorder.api\\easyorder.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{938F09D2-86B9-46B5-9187-7FD18D89263D}|EasyOrder.API\\EasyOrder.API.csproj|solutionrelative:easyorder.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{938F09D2-86B9-46B5-9187-7FD18D89263D}|EasyOrder.API\\EasyOrder.API.csproj|c:\\users\\mulik\\desktop\\rs1\\easyorder\\api\\easyorder.api\\easyorder.api\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{938F09D2-86B9-46B5-9187-7FD18D89263D}|EasyOrder.API\\EasyOrder.API.csproj|solutionrelative:easyorder.api\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{938F09D2-86B9-46B5-9187-7FD18D89263D}|EasyOrder.API\\EasyOrder.API.csproj|c:\\users\\mulik\\desktop\\rs1\\easyorder\\api\\easyorder.api\\easyorder.api\\helper\\passwordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{938F09D2-86B9-46B5-9187-7FD18D89263D}|EasyOrder.API\\EasyOrder.API.csproj|solutionrelative:easyorder.api\\helper\\passwordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,43 +46,43 @@
       "DocumentGroups": [
         {
           "DockedWidth": 247,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "IUserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\mulik\\Desktop\\RS1\\EasyOrder\\API\\EasyOrder.API\\EasyOrder.API\\Interface\\IUserRepository.cs",
-              "RelativeDocumentMoniker": "EasyOrder.API\\Interface\\IUserRepository.cs",
-              "ToolTip": "C:\\Users\\mulik\\Desktop\\RS1\\EasyOrder\\API\\EasyOrder.API\\EasyOrder.API\\Interface\\IUserRepository.cs",
-              "RelativeToolTip": "EasyOrder.API\\Interface\\IUserRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAkAAAANAAAA",
+              "DocumentIndex": 1,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\mulik\\Desktop\\RS1\\EasyOrder\\API\\EasyOrder.API\\EasyOrder.API\\Models\\Domain\\User.cs",
+              "RelativeDocumentMoniker": "EasyOrder.API\\Models\\Domain\\User.cs",
+              "ToolTip": "C:\\Users\\mulik\\Desktop\\RS1\\EasyOrder\\API\\EasyOrder.API\\EasyOrder.API\\Models\\Domain\\User.cs",
+              "RelativeToolTip": "EasyOrder.API\\Models\\Domain\\User.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-08T20:26:51.996Z"
+              "WhenOpened": "2024-09-01T12:39:07.016Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
+              "Title": "TokenValidator.cs",
+              "DocumentMoniker": "C:\\Users\\mulik\\Desktop\\RS1\\EasyOrder\\API\\EasyOrder.API\\EasyOrder.API\\Helper\\TokenValidator.cs",
+              "RelativeDocumentMoniker": "EasyOrder.API\\Helper\\TokenValidator.cs",
+              "ToolTip": "C:\\Users\\mulik\\Desktop\\RS1\\EasyOrder\\API\\EasyOrder.API\\EasyOrder.API\\Helper\\TokenValidator.cs",
+              "RelativeToolTip": "EasyOrder.API\\Helper\\TokenValidator.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAewCEAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T12:34:21.029Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "UserRepository.cs",
               "DocumentMoniker": "C:\\Users\\mulik\\Desktop\\RS1\\EasyOrder\\API\\EasyOrder.API\\EasyOrder.API\\Repository\\UserRepository.cs",
               "RelativeDocumentMoniker": "EasyOrder.API\\Repository\\UserRepository.cs",
               "ToolTip": "C:\\Users\\mulik\\Desktop\\RS1\\EasyOrder\\API\\EasyOrder.API\\EasyOrder.API\\Repository\\UserRepository.cs",
               "RelativeToolTip": "EasyOrder.API\\Repository\\UserRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAxAAAA",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAwBgAAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-08T20:27:05.962Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "PasswordHasher.cs",
-              "DocumentMoniker": "C:\\Users\\mulik\\Desktop\\RS1\\EasyOrder\\API\\EasyOrder.API\\EasyOrder.API\\Helper\\PasswordHasher.cs",
-              "RelativeDocumentMoniker": "EasyOrder.API\\Helper\\PasswordHasher.cs",
-              "ToolTip": "C:\\Users\\mulik\\Desktop\\RS1\\EasyOrder\\API\\EasyOrder.API\\EasyOrder.API\\Helper\\PasswordHasher.cs",
-              "RelativeToolTip": "EasyOrder.API\\Helper\\PasswordHasher.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACIAAAAyAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-08T10:41:02.546Z"
             },
             {
               "$type": "Document",
@@ -98,7 +98,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 7,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "C:\\Users\\mulik\\Desktop\\RS1\\EasyOrder\\API\\EasyOrder.API\\EasyOrder.API\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "EasyOrder.API\\Data\\ApplicationDbContext.cs",
@@ -111,24 +111,12 @@
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\mulik\\Desktop\\RS1\\EasyOrder\\API\\EasyOrder.API\\EasyOrder.API\\Models\\Domain\\User.cs",
-              "RelativeDocumentMoniker": "EasyOrder.API\\Models\\Domain\\User.cs",
-              "ToolTip": "C:\\Users\\mulik\\Desktop\\RS1\\EasyOrder\\API\\EasyOrder.API\\EasyOrder.API\\Models\\Domain\\User.cs",
-              "RelativeToolTip": "EasyOrder.API\\Models\\Domain\\User.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA4AAAAeAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-07T19:20:38.936Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\mulik\\Desktop\\RS1\\EasyOrder\\API\\EasyOrder.API\\EasyOrder.API\\Program.cs",
               "RelativeDocumentMoniker": "EasyOrder.API\\Program.cs",
               "ToolTip": "C:\\Users\\mulik\\Desktop\\RS1\\EasyOrder\\API\\EasyOrder.API\\EasyOrder.API\\Program.cs",
               "RelativeToolTip": "EasyOrder.API\\Program.cs",
-              "ViewState": "AQIAAEsAAAAAAAAAAAAAAFgAAAAVAAAA",
+              "ViewState": "AQIAAEMAAAAAAAAAAAAuwFoAAAADAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-07T19:51:09.252Z"
             },
@@ -140,22 +128,34 @@
               "RelativeDocumentMoniker": "EasyOrder.API\\Controllers\\UserController.cs",
               "ToolTip": "C:\\Users\\mulik\\Desktop\\RS1\\EasyOrder\\API\\EasyOrder.API\\EasyOrder.API\\Controllers\\UserController.cs",
               "RelativeToolTip": "EasyOrder.API\\Controllers\\UserController.cs",
-              "ViewState": "AQIAADsAAAAAAAAAAAAgwC4AAAAPAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAANgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-07T18:36:36.558Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\mulik\\Desktop\\RS1\\EasyOrder\\API\\EasyOrder.API\\EasyOrder.API\\appsettings.json",
-              "RelativeDocumentMoniker": "EasyOrder.API\\appsettings.json",
-              "ToolTip": "C:\\Users\\mulik\\Desktop\\RS1\\EasyOrder\\API\\EasyOrder.API\\EasyOrder.API\\appsettings.json",
-              "RelativeToolTip": "EasyOrder.API\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAOAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-08-02T17:15:42.347Z"
+              "DocumentIndex": 3,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\mulik\\Desktop\\RS1\\EasyOrder\\API\\EasyOrder.API\\EasyOrder.API\\Interface\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "EasyOrder.API\\Interface\\IUserRepository.cs",
+              "ToolTip": "C:\\Users\\mulik\\Desktop\\RS1\\EasyOrder\\API\\EasyOrder.API\\EasyOrder.API\\Interface\\IUserRepository.cs",
+              "RelativeToolTip": "EasyOrder.API\\Interface\\IUserRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-08T20:26:51.996Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PasswordHasher.cs",
+              "DocumentMoniker": "C:\\Users\\mulik\\Desktop\\RS1\\EasyOrder\\API\\EasyOrder.API\\EasyOrder.API\\Helper\\PasswordHasher.cs",
+              "RelativeDocumentMoniker": "EasyOrder.API\\Helper\\PasswordHasher.cs",
+              "ToolTip": "C:\\Users\\mulik\\Desktop\\RS1\\EasyOrder\\API\\EasyOrder.API\\EasyOrder.API\\Helper\\PasswordHasher.cs",
+              "RelativeToolTip": "EasyOrder.API\\Helper\\PasswordHasher.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACIAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-08T10:41:02.546Z"
             }
           ]
         }

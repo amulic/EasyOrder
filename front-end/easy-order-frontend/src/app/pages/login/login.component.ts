@@ -17,8 +17,6 @@ import { AuthService } from '../../services/auth/auth.service';
 import { ToastModule } from 'primeng/toast';
 import { MessageService } from 'primeng/api';
 
-
-
 //import { HlmInputDirective } from '@spartan-ng/ui-input-helm';
 
 @Component({
@@ -43,7 +41,7 @@ export class LoginComponent implements OnInit {
   loginForm!: FormGroup;
   showAlert: boolean = false;
   
-  constructor(private formBuilder: FormBuilder, private auth:AuthService, private router:Router, private messageService: MessageService) {
+  constructor(private formBuilder: FormBuilder, private auth:AuthService, private router:Router) {
   }
   
   ngOnInit(): void {
@@ -54,6 +52,7 @@ export class LoginComponent implements OnInit {
   }
   
   onSubmit() {
+    
     if(this.loginForm.valid) {
       this.auth.signIn(this.loginForm.value).subscribe((response) => {
         this.loginForm.reset();
@@ -63,11 +62,12 @@ export class LoginComponent implements OnInit {
 
             // Display success message
             alert(response.message);
+            console.log(user);
 
             // Navigate to the home page
             this.router.navigate(['home']);
           });
-        this.messageService.add({severity: 'success', summary:  'Logged in successfully!', detail: response.message });
+        //this.messageService.add({severity: 'success', summary:  'Logged in successfully!', detail: response.message });
         this.router.navigate(['home'])
       }, (err) => {
         alert(err?.error.message);
@@ -81,8 +81,6 @@ export class LoginComponent implements OnInit {
     }
   }
 
-
-  
   hideShowPass() {
     this.isText = !this.isText;
     this.isText ? this.eyeIcon = "lucideEyeOff": this.eyeIcon="lucideEye";

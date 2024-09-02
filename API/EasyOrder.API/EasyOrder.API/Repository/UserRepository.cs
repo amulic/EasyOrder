@@ -20,9 +20,9 @@ namespace EasyOrder.API.Repository
             return Save();
         }
 
-        public User GetUser(int userId)
+        public async Task<User> GetUser(int userId)
         {
-            return _context.Users.Where(x => x.Id == userId).FirstOrDefault();
+            return await _context.Users.FindAsync(userId);
         }
 
         public async Task<ActionResult<ICollection<User>>> GetUsers()

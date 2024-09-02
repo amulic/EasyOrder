@@ -5,7 +5,7 @@ namespace EasyOrder.API.Interface
 {
     public interface IUserRepository
     {
-        User GetUser(int id);
+        Task<User> GetUser(int id);
         Task<ActionResult<ICollection<User>>> GetUsers();
         bool CreateUser(User user);
         bool UserExists(int userId);
