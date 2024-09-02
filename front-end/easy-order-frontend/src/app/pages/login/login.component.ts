@@ -57,8 +57,16 @@ export class LoginComponent implements OnInit {
     if(this.loginForm.valid) {
       this.auth.signIn(this.loginForm.value).subscribe((response) => {
         this.loginForm.reset();
-        this.auth.storeToken(response.token);
-        alert(response.message);
+        this.auth.getMe().subscribe(
+          (user) => {
+            // User data fetched successfully and user$ observable is updated
+
+            // Display success message
+            alert(response.message);
+
+            // Navigate to the home page
+            this.router.navigate(['home']);
+          });
         this.messageService.add({severity: 'success', summary:  'Logged in successfully!', detail: response.message });
         this.router.navigate(['home'])
       }, (err) => {
