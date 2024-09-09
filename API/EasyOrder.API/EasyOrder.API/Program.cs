@@ -15,6 +15,13 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using Microsoft.AspNetCore.Authentication.Cookies;
+using System.Runtime.Intrinsics.X86;
+using Bytewizer.Backblaze.Client;
+using Bytewizer.Backblaze.Agent;
+using B2Net;
+using B2Net.Models;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -100,6 +107,22 @@ builder.Services.AddAuthentication(options =>
 //       });
 
 
+//BACKBLAZE SETUP
+var b2Client = new B2Client(new B2Options()
+{
+    KeyId = "70258419922a", // Application Key ID
+    ApplicationKey = "00532da348227b1bce6750bea6787452a8c00a1f1b", // Application Key
+    BucketId = "c760b26588e401e99912021a", // Your Bucket ID
+    PersistBucket = true,
+});
+
+//keyID:
+//70258419922a
+//keyName:
+//Master Application Key
+//applicationKey:
+//00532da348227b1bce6750bea6787452a8c00a1f1b
+builder.Services.AddSingleton(b2Client);
 
 var app = builder.Build();
 

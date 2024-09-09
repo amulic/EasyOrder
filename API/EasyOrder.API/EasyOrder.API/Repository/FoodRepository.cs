@@ -32,11 +32,16 @@ namespace EasyOrder.API.Repository
         {
             return _context.Foods.Any(x => x.Id == foodId);
         }
+        public bool DeleteFood(Food foodToDelete)
+        {
+            throw new NotImplementedException();
+        }
 
         public bool Save()
         {
             var saved = _context.SaveChanges();
             return saved > 0 ? true : false;
         }
+
     }
 }

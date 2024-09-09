@@ -9,10 +9,14 @@ import {IFood} from "../../models/IFood";
 })
 export class FoodService {
 
-  url:string="https://localhost:7282/api/";
+  url:string="https://localhost:7282/api";
   constructor(private httpC:HttpClient) { }
 
   getAllFoods() :Observable<IFood[]> {
-    return this.httpC.get<IFood[]>(`${this.url}Food`, {withCredentials:true});
+    return this.httpC.get<IFood[]>(`${this.url}/Food`, {withCredentials:true});
+  }
+
+  createFood(food:IFood) :Observable<IFood> {
+    return this.httpC.post<IFood>(`${this.url}/Food`, food, {withCredentials:true});
   }
 }

@@ -11,11 +11,12 @@ namespace EasyOrder.API.Models.Domain
         public string Name { get; set; }
         public float Price { get; set; }
         //vjerv treba image property
-        public string ImageLink { get; set; }
+        public string Description { get; set; }     
+        public string? ImageLink { get; set; }
         
-        public ICollection<Product> Products { get; set; }
+        public virtual ICollection<Product> Products { get; set; }
         
-        public ICollection<OrderDetailItem<Food>> OrderDetailsItems { get; set; }
+        public virtual ICollection<OrderDetailItem<Food>> OrderDetailsItems { get; set; }
 
     }
 }

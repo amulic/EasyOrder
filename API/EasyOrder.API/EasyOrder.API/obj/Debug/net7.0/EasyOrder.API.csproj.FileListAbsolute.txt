@@ -174,3 +174,8 @@ C:\Users\mulik\Desktop\RS1\EasyOrder\API\EasyOrder.API\EasyOrder.API\obj\Debug\n
 C:\Users\mulik\Desktop\RS1\EasyOrder\API\EasyOrder.API\EasyOrder.API\obj\Debug\net7.0\EasyOrder.API.pdb
 C:\Users\mulik\Desktop\RS1\EasyOrder\API\EasyOrder.API\EasyOrder.API\obj\Debug\net7.0\EasyOrder.API.genruntimeconfig.cache
 C:\Users\mulik\Desktop\RS1\EasyOrder\API\EasyOrder.API\EasyOrder.API\obj\Debug\net7.0\ref\EasyOrder.API.dll
+C:\Users\mulik\Desktop\RS1\EasyOrder\API\EasyOrder.API\EasyOrder.API\bin\Debug\net7.0\B2.Net.dll
+C:\Users\mulik\Desktop\RS1\EasyOrder\API\EasyOrder.API\EasyOrder.API\bin\Debug\net7.0\Backblaze.Agent.dll
+C:\Users\mulik\Desktop\RS1\EasyOrder\API\EasyOrder.API\EasyOrder.API\bin\Debug\net7.0\Backblaze.Client.dll
+C:\Users\mulik\Desktop\RS1\EasyOrder\API\EasyOrder.API\EasyOrder.API\bin\Debug\net7.0\System.ServiceModel.dll
+C:\Users\mulik\Desktop\RS1\EasyOrder\API\EasyOrder.API\EasyOrder.API\bin\Debug\net7.0\Polly.dll

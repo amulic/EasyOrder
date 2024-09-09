@@ -52,7 +52,7 @@ namespace EasyOrder.API.Controllers
         [HttpPost]
         [ProducesResponseType(204)]
         [ProducesResponseType(400)]
-        public async Task<ActionResult<Food>> CreateFood( FoodDto foodCreate)
+        public async Task<ActionResult<Food>> CreateFood([FromBody] FoodDto foodCreate)
         {
             if (foodCreate == null)
                 return BadRequest();
@@ -69,7 +69,6 @@ namespace EasyOrder.API.Controllers
 
             var foodMap = _mapper.Map<Food>(foodCreate);
 
-            
 
             if (!_foodRepository.CreateFood(foodMap))
             {
@@ -77,30 +76,30 @@ namespace EasyOrder.API.Controllers
                 return StatusCode(500, ModelState);
             }
 
-            return Ok("Successfully created");
+            return Ok(new { Message = "Successfully created" });
         }
 
-        //[HttpDelete("{foodId}")]
-        //[ProducesResponseType(400)]
-        //[ProducesResponseType(204)]
-        //[ProducesResponseType(404)]
-        //public IActionResult DeleteFood(int foodId)
-        //{
-        //    if (!_foodRepository.FoodExists(foodId))
-        //        return NotFound();
+        [HttpDelete("{foodId}")]
+        [ProducesResponseType(400)]
+        [ProducesResponseType(204)]
+        [ProducesResponseType(404)]
+        public IActionResult DeleteFood(int foodId)
+        {
+            if (!_foodRepository.FoodExists(foodId))
+                return NotFound("Food item not found!");
 
-        //    var foodToDelete = _foodRepository.GetFood(foodId);
+            var foodToDelete = _foodRepository.GetFood(foodId);
 
-        //    if (!ModelState.IsValid)
-        //        return BadRequest(ModelState);
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
 
-        //    if (!_foodRepository.DeleteFood(foodToDelete))
-        //    {
-        //        ModelState.AddModelError("", "Something went wrong deleting category");
-        //    }
+            if (!_foodRepository.DeleteFood(foodToDelete))
+            {
+                ModelState.AddModelError("", "Something went wrong deleting food item!");
+            }
 
-        //    return NoContent();
-        //}
+            return NoContent();
+        }
 
     }
 }

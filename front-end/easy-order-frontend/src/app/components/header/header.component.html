@@ -12,11 +12,12 @@
     </nav>
     <div class="flex space-x-2">
       <span class="sr-only"></span>
-      <h1>Hello {{user! !== null ? user?.name : "Guest"}}</h1>
-      <a *ngIf="user===null || user===undefined" class="disabled:opacity-50 disabled:pointer-events-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-ring font-medium h-9 hover:bg-accent hover:text-accent-foreground inline-flex items-center justify-center px-3 ring-offset-background rounded-md text-sm transition-colors"  routerLink="login">
-        <hlm-icon name="lucideLogIn" size="sm"/>
+      <h1>Hello </h1>
+      <a class="disabled:opacity-50 disabled:pointer-events-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-ring font-medium h-9 hover:bg-accent hover:text-accent-foreground inline-flex items-center justify-center px-3 ring-offset-background rounded-md text-sm transition-colors"  routerLink="login">
+        <hlm-icon name="lucideLogIn" size="sm"/> 
       </a>
-      <buttom *ngIf="!user" (click)="logout()" hlmBtn class="hover:cursor-pointer" variant="destructive" >Log out</buttom>
+      <!--*ngIf="!user"-->
+      <button  (click)="logout()" hlmBtn class="hover:cursor-pointer" variant="destructive" >Log out</button>
       <a class="disabled:opacity-50 disabled:pointer-events-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-ring font-medium h-9 hover:bg-accent hover:text-accent-foreground inline-flex items-center justify-center px-3 ring-offset-background rounded-md text-sm transition-colors"  routerLink="cart">
         <hlm-icon name="lucideShoppingCart" size="sm"/>
       </a>

@@ -9,5 +9,6 @@ namespace EasyOrder.API.Interface
         bool CreateFood(Food food);
         bool FoodExists(int foodId);
         bool Save();
+        bool DeleteFood(Food foodToDelete);
     }
 }

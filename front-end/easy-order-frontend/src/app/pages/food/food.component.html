@@ -4,9 +4,9 @@
     <div hlmCard class="w-1/4" *ngFor='let food of foodsList'>
       <div hlmCardHeader>
         <h3 hlmCardTitle>{{food.name}}</h3>
-        <p hlmCardDescription>Card Description</p>
+        <p hlmCardDescription>{{food.price}}$</p>
       </div>
-      <p hlmCardContent>{{food.price}}</p>
+      <p hlmCardContent>{{food.description}}</p>
       <p hlmCardFooter>Card Footer</p>
       <button class="mx-auto" hlmBtn variant="outline" (click)="addToCart(food)">Add to Cart</button>
     </div>

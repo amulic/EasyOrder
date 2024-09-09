@@ -9,13 +9,49 @@
 
         <div class="mt-5 ">
             <label hlmLabel for="price" class="block mb-2 text-md font-normal  ">Price</label>
-            <input formControlName="price" type="text" id="price" class="bg-black border text-gray-400 border-gray-300  text-sm rounded-lg focus:ring-gray-100 focus:border-gray-100 block w-full p-2.5 dark:border-gray-600 dark:placeholder-white-60 dark:text-white dark:focus:ring-gray-100 dark:focus:border-gray-100 dark:focus-within:text-gray-50" required />
+            <input formControlName="price" type="text" id="price" class="bg-black border text-gray-400 border-gray-300  text-sm rounded-lg focus:ring-gray-100 focus:border-gray-100 block w-full p-2.5 dark:border-grey-100 dark:placeholder-white-60 dark:text-white dark:focus:ring-gray-100 dark:focus:border-gray-100 dark:focus-within:text-gray-50" required />
         </div>
-        <small *ngIf="newItemForm.controls['surname'].dirty && newItemForm.hasError('required', 'surname')" class="text-red-600">*Surname is required</small>
+        <small *ngIf="newItemForm.controls['price'].dirty && newItemForm.hasError('required', 'price')" class="text-red-600">*Price is required</small>
 
-      <p class="text-sm mt-5">All done? Click the button below to make your account!</p>
-      <button hlmBtn (click)="addItem()" type="submit" class="text-white w-full mt-2">Sign Up</button>
-      <p class="text mt-2">Already have an account? <a routerLink="/login" class="underline cursor-pointer text-blue-500" >Log In</a></p>
+        <div class="mt-5 ">
+            <label hlmLabel for="description" class="block mb-2 text-md font-normal  ">Description</label>
+            <input formControlName="description" type="text" id="description" class="bg-black border text-gray-400 border-gray-300  text-sm rounded-lg focus:ring-gray-100 focus:border-gray-100 block w-full p-2.5 dark:border-grey-100 dark:placeholder-white-60 dark:text-white dark:focus:ring-gray-100 dark:focus:border-gray-100 dark:focus-within:text-gray-50" required />
+        </div>
+        <small *ngIf="newItemForm.controls['price'].dirty && newItemForm.hasError('required', 'price')" class="text-red-600">*Price is required</small>
+
+        <div class="mt-5">
+            <label for="imageLink" class="block mb-2 text-md font-normal text-black">Image</label>
+            <div
+              class="flex flex-col items-center justify-center w-full h-64 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-black dark:hover:bg-gray-900 hover:bg-gray-900 dark:border-gray-600 dark:hover:border-gray-500"
+              (click)="triggerFileInput()"
+            >
+              <div class="flex flex-col items-center justify-center pt-5 pb-6">
+                <hlm-icon name="lucideUploadCloud" size="lg" class="text-white" />
+                <p class="mb-2 text-sm text-white">
+                  <span class="font-semibold">Click to upload</span> or drag and drop
+                </p>
+                <p class="text-xs text-white">
+                  SVG, PNG, JPG or GIF (MAX. 800x400px)
+                </p>
+              </div>
+              <input
+                formControlName="imageLink"
+                id="imageLink"
+                type="file"
+                class="hidden"
+                required
+                (change)="onFileChange($event)"
+              />
+            </div>
+            <small
+              *ngIf="newItemForm.controls['imageLink'].dirty && newItemForm.hasError('required', 'imageLink')"
+              class="text-red-600"
+              >*Image is required</small
+            >
+          </div>
+
+      <p class="text-sm mt-5 mb-5">Click the button to add the item the menu!</p>
+      <button hlmBtn (click)="addItem()" type="submit" class="text-white">Add item</button>
     </form>
       
 </div>
