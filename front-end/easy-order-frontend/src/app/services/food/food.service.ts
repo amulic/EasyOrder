@@ -16,7 +16,15 @@ export class FoodService {
     return this.httpC.get<IFood[]>(`${this.url}/Food`, {withCredentials:true});
   }
 
-  createFood(food:IFood) :Observable<IFood> {
+  createFood(data:FormData) :Observable<IFood> {
+    const food: Partial<IFood> = {
+      name: data.get('name') as string,
+      price: Number.parseFloat(data.get('price') as string),
+      description: data.get('description') as string,
+      imageLink: data.get('imageLink') as string
+    }
+    console.log("data", data);
+    console.log("food", food);
     return this.httpC.post<IFood>(`${this.url}/Food`, food, {withCredentials:true});
   }
 }

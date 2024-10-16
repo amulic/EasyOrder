@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v7.0": {
       "EasyOrder.API/1.0.0": {
         "dependencies": {
+          "AWSSDK.S3": "4.0.0-preview.3",
           "AutoMapper": "12.0.1",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
           "B2Net": "0.7.5",
@@ -48,6 +49,25 @@
           "lib/netstandard2.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {
             "assemblyVersion": "12.0.0.0",
             "fileVersion": "12.0.1.0"
+          }
+        }
+      },
+      "AWSSDK.Core/4.0.0-preview.3": {
+        "runtime": {
+          "lib/netcoreapp3.1/AWSSDK.Core.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.0.0.0"
+          }
+        }
+      },
+      "AWSSDK.S3/4.0.0-preview.3": {
+        "dependencies": {
+          "AWSSDK.Core": "4.0.0-preview.3"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/AWSSDK.S3.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.0.0.0"
           }
         }
       },
@@ -1477,6 +1497,20 @@
       "sha512": "sha512-+g/K+Vpe3gGMKGzjslMOdqNlkikScDjWfVvmWTayrDHaG/n2pPmFBMa+jKX1r/h6BDGFdkyRjAuhFE3ykW+r1g==",
       "path": "automapper.extensions.microsoft.dependencyinjection/12.0.1",
       "hashPath": "automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512"
+    },
+    "AWSSDK.Core/4.0.0-preview.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-AKLxT9t3EEs8/zPh/JCTh07gEXW3rCER6IIbCYb1N3w4TYTsoktxjeRwJHBbbH0nh+geprzGSlRMjxtQvjhPag==",
+      "path": "awssdk.core/4.0.0-preview.3",
+      "hashPath": "awssdk.core.4.0.0-preview.3.nupkg.sha512"
+    },
+    "AWSSDK.S3/4.0.0-preview.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-neRcMA1S52mMjLG+aeUnszczX/Uz/5x0thi/bRYA4GJudQ6UvN82beaxp2fWmOqbJAf65g+8tHAu4p5KrVypHg==",
+      "path": "awssdk.s3/4.0.0-preview.3",
+      "hashPath": "awssdk.s3.4.0.0-preview.3.nupkg.sha512"
     },
     "Azure.Core/1.35.0": {
       "type": "package",

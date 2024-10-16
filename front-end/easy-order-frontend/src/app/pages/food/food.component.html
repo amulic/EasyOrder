@@ -7,6 +7,7 @@
         <p hlmCardDescription>{{food.price}}$</p>
       </div>
       <p hlmCardContent>{{food.description}}</p>
+      <img hlmCardContent [src]="food.imageLink" alt="Food image" />
       <p hlmCardFooter>Card Footer</p>
       <button class="mx-auto" hlmBtn variant="outline" (click)="addToCart(food)">Add to Cart</button>
     </div>

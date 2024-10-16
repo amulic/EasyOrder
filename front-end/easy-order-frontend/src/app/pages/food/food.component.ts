@@ -34,7 +34,14 @@ import { ICartItem } from '../../models/ICartItem';
 export class FoodComponent {
 
   item!:ICartItem;
+  foodsList:IFood[] =[];
 
+  constructor(private foodService:FoodService, private cartService:CartService) {
+      this.foodService.getAllFoods().subscribe((response)=>{
+        this.foodsList=response;
+        console.log(this.foodsList);
+      })
+  }
   addToCart(food:IFood) {
     this.item={
       item: food, 
@@ -46,10 +53,4 @@ export class FoodComponent {
     this.cartService.addItem(this.item);
   }
 
-  foodsList:IFood[] =[];
-  constructor(private foodService:FoodService, private cartService:CartService) {
-      this.foodService.getAllFoods().subscribe((response)=>{
-        this.foodsList=response;
-      })
-  }
 }

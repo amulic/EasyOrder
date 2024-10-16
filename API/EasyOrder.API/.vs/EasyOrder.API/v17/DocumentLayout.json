@@ -3,40 +3,60 @@
   "WorkspaceRootPath": "C:\\Users\\mulik\\Desktop\\RS1\\EasyOrder\\API\\EasyOrder.API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\mulik\\Desktop\\RS1\\EasyOrder\\API\\EasyOrder.API\\EasyOrder.API\\Migrations\\20240909151817_AddedDescToFoodDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:EasyOrder.API\\Migrations\\20240909151817_AddedDescToFoodDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{938F09D2-86B9-46B5-9187-7FD18D89263D}|EasyOrder.API\\EasyOrder.API.csproj|c:\\users\\mulik\\desktop\\rs1\\easyorder\\api\\easyorder.api\\easyorder.api\\models\\dto\\fooddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{938F09D2-86B9-46B5-9187-7FD18D89263D}|EasyOrder.API\\EasyOrder.API.csproj|solutionrelative:easyorder.api\\models\\dto\\fooddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{938F09D2-86B9-46B5-9187-7FD18D89263D}|EasyOrder.API\\EasyOrder.API.csproj|c:\\users\\mulik\\desktop\\rs1\\easyorder\\api\\easyorder.api\\easyorder.api\\controllers\\fileuploadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{938F09D2-86B9-46B5-9187-7FD18D89263D}|EasyOrder.API\\EasyOrder.API.csproj|solutionrelative:easyorder.api\\controllers\\fileuploadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{938F09D2-86B9-46B5-9187-7FD18D89263D}|EasyOrder.API\\EasyOrder.API.csproj|c:\\users\\mulik\\desktop\\rs1\\easyorder\\api\\easyorder.api\\easyorder.api\\models\\domain\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{938F09D2-86B9-46B5-9187-7FD18D89263D}|EasyOrder.API\\EasyOrder.API.csproj|solutionrelative:easyorder.api\\models\\domain\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{938F09D2-86B9-46B5-9187-7FD18D89263D}|EasyOrder.API\\EasyOrder.API.csproj|c:\\users\\mulik\\desktop\\rs1\\easyorder\\api\\easyorder.api\\easyorder.api\\controllers\\foodcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{938F09D2-86B9-46B5-9187-7FD18D89263D}|EasyOrder.API\\EasyOrder.API.csproj|solutionrelative:easyorder.api\\controllers\\foodcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{938F09D2-86B9-46B5-9187-7FD18D89263D}|EasyOrder.API\\EasyOrder.API.csproj|c:\\users\\mulik\\desktop\\rs1\\easyorder\\api\\easyorder.api\\easyorder.api\\models\\domain\\orderdetailitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{938F09D2-86B9-46B5-9187-7FD18D89263D}|EasyOrder.API\\EasyOrder.API.csproj|solutionrelative:easyorder.api\\models\\domain\\orderdetailitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{938F09D2-86B9-46B5-9187-7FD18D89263D}|EasyOrder.API\\EasyOrder.API.csproj|c:\\users\\mulik\\desktop\\rs1\\easyorder\\api\\easyorder.api\\easyorder.api\\models\\domain\\orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{938F09D2-86B9-46B5-9187-7FD18D89263D}|EasyOrder.API\\EasyOrder.API.csproj|solutionrelative:easyorder.api\\models\\domain\\orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{938F09D2-86B9-46B5-9187-7FD18D89263D}|EasyOrder.API\\EasyOrder.API.csproj|c:\\users\\mulik\\desktop\\rs1\\easyorder\\api\\easyorder.api\\easyorder.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{938F09D2-86B9-46B5-9187-7FD18D89263D}|EasyOrder.API\\EasyOrder.API.csproj|solutionrelative:easyorder.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{938F09D2-86B9-46B5-9187-7FD18D89263D}|EasyOrder.API\\EasyOrder.API.csproj|c:\\users\\mulik\\desktop\\rs1\\easyorder\\api\\easyorder.api\\easyorder.api\\models\\domain\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{938F09D2-86B9-46B5-9187-7FD18D89263D}|EasyOrder.API\\EasyOrder.API.csproj|solutionrelative:easyorder.api\\models\\domain\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{938F09D2-86B9-46B5-9187-7FD18D89263D}|EasyOrder.API\\EasyOrder.API.csproj|c:\\users\\mulik\\desktop\\rs1\\easyorder\\api\\easyorder.api\\easyorder.api\\models\\dto\\orderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{938F09D2-86B9-46B5-9187-7FD18D89263D}|EasyOrder.API\\EasyOrder.API.csproj|solutionrelative:easyorder.api\\models\\dto\\orderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{938F09D2-86B9-46B5-9187-7FD18D89263D}|EasyOrder.API\\EasyOrder.API.csproj|c:\\users\\mulik\\desktop\\rs1\\easyorder\\api\\easyorder.api\\easyorder.api\\models\\domain\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{938F09D2-86B9-46B5-9187-7FD18D89263D}|EasyOrder.API\\EasyOrder.API.csproj|solutionrelative:easyorder.api\\models\\domain\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{938F09D2-86B9-46B5-9187-7FD18D89263D}|EasyOrder.API\\EasyOrder.API.csproj|c:\\users\\mulik\\desktop\\rs1\\easyorder\\api\\easyorder.api\\easyorder.api\\helper\\backblazepresignedurlgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{938F09D2-86B9-46B5-9187-7FD18D89263D}|EasyOrder.API\\EasyOrder.API.csproj|solutionrelative:easyorder.api\\helper\\backblazepresignedurlgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{938F09D2-86B9-46B5-9187-7FD18D89263D}|EasyOrder.API\\EasyOrder.API.csproj|c:\\users\\mulik\\desktop\\rs1\\easyorder\\api\\easyorder.api\\easyorder.api\\models\\domain\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{938F09D2-86B9-46B5-9187-7FD18D89263D}|EasyOrder.API\\EasyOrder.API.csproj|solutionrelative:easyorder.api\\models\\domain\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{938F09D2-86B9-46B5-9187-7FD18D89263D}|EasyOrder.API\\EasyOrder.API.csproj|c:\\users\\mulik\\desktop\\rs1\\easyorder\\api\\easyorder.api\\easyorder.api\\repository\\foodrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{938F09D2-86B9-46B5-9187-7FD18D89263D}|EasyOrder.API\\EasyOrder.API.csproj|solutionrelative:easyorder.api\\repository\\foodrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{938F09D2-86B9-46B5-9187-7FD18D89263D}|EasyOrder.API\\EasyOrder.API.csproj|c:\\users\\mulik\\desktop\\rs1\\easyorder\\api\\easyorder.api\\easyorder.api\\interface\\ifoodrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{938F09D2-86B9-46B5-9187-7FD18D89263D}|EasyOrder.API\\EasyOrder.API.csproj|solutionrelative:easyorder.api\\interface\\ifoodrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{938F09D2-86B9-46B5-9187-7FD18D89263D}|EasyOrder.API\\EasyOrder.API.csproj|c:\\users\\mulik\\desktop\\rs1\\easyorder\\api\\easyorder.api\\easyorder.api\\models\\domain\\food.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{938F09D2-86B9-46B5-9187-7FD18D89263D}|EasyOrder.API\\EasyOrder.API.csproj|solutionrelative:easyorder.api\\models\\domain\\food.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{938F09D2-86B9-46B5-9187-7FD18D89263D}|EasyOrder.API\\EasyOrder.API.csproj|c:\\users\\mulik\\desktop\\rs1\\easyorder\\api\\easyorder.api\\easyorder.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{938F09D2-86B9-46B5-9187-7FD18D89263D}|EasyOrder.API\\EasyOrder.API.csproj|solutionrelative:easyorder.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{938F09D2-86B9-46B5-9187-7FD18D89263D}|EasyOrder.API\\EasyOrder.API.csproj|c:\\users\\mulik\\desktop\\rs1\\easyorder\\api\\easyorder.api\\easyorder.api\\models\\domain\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{938F09D2-86B9-46B5-9187-7FD18D89263D}|EasyOrder.API\\EasyOrder.API.csproj|solutionrelative:easyorder.api\\models\\domain\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{938F09D2-86B9-46B5-9187-7FD18D89263D}|EasyOrder.API\\EasyOrder.API.csproj|c:\\users\\mulik\\desktop\\rs1\\easyorder\\api\\easyorder.api\\easyorder.api\\controllers\\fileuploadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{938F09D2-86B9-46B5-9187-7FD18D89263D}|EasyOrder.API\\EasyOrder.API.csproj|solutionrelative:easyorder.api\\controllers\\fileuploadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{938F09D2-86B9-46B5-9187-7FD18D89263D}|EasyOrder.API\\EasyOrder.API.csproj|c:\\users\\mulik\\desktop\\rs1\\easyorder\\api\\easyorder.api\\easyorder.api\\interface\\ifoodrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{938F09D2-86B9-46B5-9187-7FD18D89263D}|EasyOrder.API\\EasyOrder.API.csproj|solutionrelative:easyorder.api\\interface\\ifoodrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{938F09D2-86B9-46B5-9187-7FD18D89263D}|EasyOrder.API\\EasyOrder.API.csproj|c:\\users\\mulik\\desktop\\rs1\\easyorder\\api\\easyorder.api\\easyorder.api\\helper\\tokenvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -55,32 +75,135 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "20240909151817_AddedDescToFoodDto.cs",
-              "DocumentMoniker": "C:\\Users\\mulik\\Desktop\\RS1\\EasyOrder\\API\\EasyOrder.API\\EasyOrder.API\\Migrations\\20240909151817_AddedDescToFoodDto.cs",
-              "RelativeDocumentMoniker": "EasyOrder.API\\Migrations\\20240909151817_AddedDescToFoodDto.cs",
-              "ToolTip": "C:\\Users\\mulik\\Desktop\\RS1\\EasyOrder\\API\\EasyOrder.API\\EasyOrder.API\\Migrations\\20240909151817_AddedDescToFoodDto.cs",
-              "RelativeToolTip": "EasyOrder.API\\Migrations\\20240909151817_AddedDescToFoodDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "Item.cs",
+              "DocumentMoniker": "C:\\Users\\mulik\\Desktop\\RS1\\EasyOrder\\API\\EasyOrder.API\\EasyOrder.API\\Models\\Domain\\Item.cs",
+              "RelativeDocumentMoniker": "EasyOrder.API\\Models\\Domain\\Item.cs",
+              "ToolTip": "C:\\Users\\mulik\\Desktop\\RS1\\EasyOrder\\API\\EasyOrder.API\\EasyOrder.API\\Models\\Domain\\Item.cs",
+              "RelativeToolTip": "EasyOrder.API\\Models\\Domain\\Item.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-09T15:18:18.155Z",
+              "WhenOpened": "2024-10-16T16:15:52.488Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OrderDetailItem.cs",
+              "DocumentMoniker": "C:\\Users\\mulik\\Desktop\\RS1\\EasyOrder\\API\\EasyOrder.API\\EasyOrder.API\\Models\\Domain\\OrderDetailItem.cs",
+              "RelativeDocumentMoniker": "EasyOrder.API\\Models\\Domain\\OrderDetailItem.cs",
+              "ToolTip": "C:\\Users\\mulik\\Desktop\\RS1\\EasyOrder\\API\\EasyOrder.API\\EasyOrder.API\\Models\\Domain\\OrderDetailItem.cs",
+              "RelativeToolTip": "EasyOrder.API\\Models\\Domain\\OrderDetailItem.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAkAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T16:14:15.607Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "OrderDetail.cs",
+              "DocumentMoniker": "C:\\Users\\mulik\\Desktop\\RS1\\EasyOrder\\API\\EasyOrder.API\\EasyOrder.API\\Models\\Domain\\OrderDetail.cs",
+              "RelativeDocumentMoniker": "EasyOrder.API\\Models\\Domain\\OrderDetail.cs",
+              "ToolTip": "C:\\Users\\mulik\\Desktop\\RS1\\EasyOrder\\API\\EasyOrder.API\\EasyOrder.API\\Models\\Domain\\OrderDetail.cs",
+              "RelativeToolTip": "EasyOrder.API\\Models\\Domain\\OrderDetail.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T16:13:42.011Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "FoodDto.cs",
-              "DocumentMoniker": "C:\\Users\\mulik\\Desktop\\RS1\\EasyOrder\\API\\EasyOrder.API\\EasyOrder.API\\Models\\DTO\\FoodDto.cs",
-              "RelativeDocumentMoniker": "EasyOrder.API\\Models\\DTO\\FoodDto.cs",
-              "ToolTip": "C:\\Users\\mulik\\Desktop\\RS1\\EasyOrder\\API\\EasyOrder.API\\EasyOrder.API\\Models\\DTO\\FoodDto.cs",
-              "RelativeToolTip": "EasyOrder.API\\Models\\DTO\\FoodDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Title": "FoodController.cs",
+              "DocumentMoniker": "C:\\Users\\mulik\\Desktop\\RS1\\EasyOrder\\API\\EasyOrder.API\\EasyOrder.API\\Controllers\\FoodController.cs",
+              "RelativeDocumentMoniker": "EasyOrder.API\\Controllers\\FoodController.cs",
+              "ToolTip": "C:\\Users\\mulik\\Desktop\\RS1\\EasyOrder\\API\\EasyOrder.API\\EasyOrder.API\\Controllers\\FoodController.cs",
+              "RelativeToolTip": "EasyOrder.API\\Controllers\\FoodController.cs",
+              "ViewState": "AQIAADAAAAAAAAAAAAAgwEEAAABDAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-09T15:17:09.726Z",
+              "WhenOpened": "2024-09-05T15:01:31.096Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\mulik\\Desktop\\RS1\\EasyOrder\\API\\EasyOrder.API\\EasyOrder.API\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "EasyOrder.API\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\mulik\\Desktop\\RS1\\EasyOrder\\API\\EasyOrder.API\\EasyOrder.API\\Controllers\\UserController.cs",
+              "RelativeToolTip": "EasyOrder.API\\Controllers\\UserController.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAALEAAABNAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-06T16:45:08.469Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "OrderDto.cs",
+              "DocumentMoniker": "C:\\Users\\mulik\\Desktop\\RS1\\EasyOrder\\API\\EasyOrder.API\\EasyOrder.API\\Models\\DTO\\OrderDto.cs",
+              "RelativeDocumentMoniker": "EasyOrder.API\\Models\\DTO\\OrderDto.cs",
+              "ToolTip": "C:\\Users\\mulik\\Desktop\\RS1\\EasyOrder\\API\\EasyOrder.API\\EasyOrder.API\\Models\\DTO\\OrderDto.cs",
+              "RelativeToolTip": "EasyOrder.API\\Models\\DTO\\OrderDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T16:12:18.349Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "C:\\Users\\mulik\\Desktop\\RS1\\EasyOrder\\API\\EasyOrder.API\\EasyOrder.API\\Models\\Domain\\Employee.cs",
+              "RelativeDocumentMoniker": "EasyOrder.API\\Models\\Domain\\Employee.cs",
+              "ToolTip": "C:\\Users\\mulik\\Desktop\\RS1\\EasyOrder\\API\\EasyOrder.API\\EasyOrder.API\\Models\\Domain\\Employee.cs",
+              "RelativeToolTip": "EasyOrder.API\\Models\\Domain\\Employee.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T16:04:43.806Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\mulik\\Desktop\\RS1\\EasyOrder\\API\\EasyOrder.API\\EasyOrder.API\\Models\\Domain\\Order.cs",
+              "RelativeDocumentMoniker": "EasyOrder.API\\Models\\Domain\\Order.cs",
+              "ToolTip": "C:\\Users\\mulik\\Desktop\\RS1\\EasyOrder\\API\\EasyOrder.API\\EasyOrder.API\\Models\\Domain\\Order.cs",
+              "RelativeToolTip": "EasyOrder.API\\Models\\Domain\\Order.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABAAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T16:04:17.722Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "BackblazePresignedUrlGenerator.cs",
+              "DocumentMoniker": "C:\\Users\\mulik\\Desktop\\RS1\\EasyOrder\\API\\EasyOrder.API\\EasyOrder.API\\Helper\\BackblazePresignedUrlGenerator.cs",
+              "RelativeDocumentMoniker": "EasyOrder.API\\Helper\\BackblazePresignedUrlGenerator.cs",
+              "ToolTip": "C:\\Users\\mulik\\Desktop\\RS1\\EasyOrder\\API\\EasyOrder.API\\EasyOrder.API\\Helper\\BackblazePresignedUrlGenerator.cs",
+              "RelativeToolTip": "EasyOrder.API\\Helper\\BackblazePresignedUrlGenerator.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAUAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T20:17:29.138Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\mulik\\Desktop\\RS1\\EasyOrder\\API\\EasyOrder.API\\EasyOrder.API\\Program.cs",
+              "RelativeDocumentMoniker": "EasyOrder.API\\Program.cs",
+              "ToolTip": "C:\\Users\\mulik\\Desktop\\RS1\\EasyOrder\\API\\EasyOrder.API\\EasyOrder.API\\Program.cs",
+              "RelativeToolTip": "EasyOrder.API\\Program.cs",
+              "ViewState": "AQIAAE0AAAAAAAAAAAAAAGYAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-06T11:58:36.08Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "IFoodRepository.cs",
               "DocumentMoniker": "C:\\Users\\mulik\\Desktop\\RS1\\EasyOrder\\API\\EasyOrder.API\\EasyOrder.API\\Interface\\IFoodRepository.cs",
               "RelativeDocumentMoniker": "EasyOrder.API\\Interface\\IFoodRepository.cs",
@@ -92,44 +215,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Food.cs",
-              "DocumentMoniker": "C:\\Users\\mulik\\Desktop\\RS1\\EasyOrder\\API\\EasyOrder.API\\EasyOrder.API\\Models\\Domain\\Food.cs",
-              "RelativeDocumentMoniker": "EasyOrder.API\\Models\\Domain\\Food.cs",
-              "ToolTip": "C:\\Users\\mulik\\Desktop\\RS1\\EasyOrder\\API\\EasyOrder.API\\EasyOrder.API\\Models\\Domain\\Food.cs",
-              "RelativeToolTip": "EasyOrder.API\\Models\\Domain\\Food.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAA0AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-08T15:45:35.079Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 12,
               "Title": "FileUploadController.cs",
               "DocumentMoniker": "C:\\Users\\mulik\\Desktop\\RS1\\EasyOrder\\API\\EasyOrder.API\\EasyOrder.API\\Controllers\\FileUploadController.cs",
               "RelativeDocumentMoniker": "EasyOrder.API\\Controllers\\FileUploadController.cs",
               "ToolTip": "C:\\Users\\mulik\\Desktop\\RS1\\EasyOrder\\API\\EasyOrder.API\\EasyOrder.API\\Controllers\\FileUploadController.cs",
               "RelativeToolTip": "EasyOrder.API\\Controllers\\FileUploadController.cs",
-              "ViewState": "AQIAABQAAAAAAAAAAAAUwCcAAABLAAAA",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAQwA4AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-08T14:08:22.794Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-08T14:08:22.794Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\mulik\\Desktop\\RS1\\EasyOrder\\API\\EasyOrder.API\\EasyOrder.API\\Program.cs",
-              "RelativeDocumentMoniker": "EasyOrder.API\\Program.cs",
-              "ToolTip": "C:\\Users\\mulik\\Desktop\\RS1\\EasyOrder\\API\\EasyOrder.API\\EasyOrder.API\\Program.cs",
-              "RelativeToolTip": "EasyOrder.API\\Program.cs",
-              "ViewState": "AQIAAGcAAAAAAAAAAAAAAHkAAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-08T12:44:13.447Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 10,
               "Title": "FoodRepository.cs",
               "DocumentMoniker": "C:\\Users\\mulik\\Desktop\\RS1\\EasyOrder\\API\\EasyOrder.API\\EasyOrder.API\\Repository\\FoodRepository.cs",
               "RelativeDocumentMoniker": "EasyOrder.API\\Repository\\FoodRepository.cs",
@@ -141,31 +239,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FoodController.cs",
-              "DocumentMoniker": "C:\\Users\\mulik\\Desktop\\RS1\\EasyOrder\\API\\EasyOrder.API\\EasyOrder.API\\Controllers\\FoodController.cs",
-              "RelativeDocumentMoniker": "EasyOrder.API\\Controllers\\FoodController.cs",
-              "ToolTip": "C:\\Users\\mulik\\Desktop\\RS1\\EasyOrder\\API\\EasyOrder.API\\EasyOrder.API\\Controllers\\FoodController.cs",
-              "RelativeToolTip": "EasyOrder.API\\Controllers\\FoodController.cs",
-              "ViewState": "AQIAADoAAAAAAAAAAAAkwFsAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-05T15:01:31.096Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\mulik\\Desktop\\RS1\\EasyOrder\\API\\EasyOrder.API\\EasyOrder.API\\Models\\Domain\\User.cs",
               "RelativeDocumentMoniker": "EasyOrder.API\\Models\\Domain\\User.cs",
               "ToolTip": "C:\\Users\\mulik\\Desktop\\RS1\\EasyOrder\\API\\EasyOrder.API\\EasyOrder.API\\Models\\Domain\\User.cs",
               "RelativeToolTip": "EasyOrder.API\\Models\\Domain\\User.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAIBJwAAAAAAAAAAA",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAqwBQAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-01T12:39:07.016Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 14,
               "Title": "TokenValidator.cs",
               "DocumentMoniker": "C:\\Users\\mulik\\Desktop\\RS1\\EasyOrder\\API\\EasyOrder.API\\EasyOrder.API\\Helper\\TokenValidator.cs",
               "RelativeDocumentMoniker": "EasyOrder.API\\Helper\\TokenValidator.cs",

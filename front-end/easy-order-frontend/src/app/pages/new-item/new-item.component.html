@@ -17,7 +17,7 @@
             <label hlmLabel for="description" class="block mb-2 text-md font-normal  ">Description</label>
             <input formControlName="description" type="text" id="description" class="bg-black border text-gray-400 border-gray-300  text-sm rounded-lg focus:ring-gray-100 focus:border-gray-100 block w-full p-2.5 dark:border-grey-100 dark:placeholder-white-60 dark:text-white dark:focus:ring-gray-100 dark:focus:border-gray-100 dark:focus-within:text-gray-50" required />
         </div>
-        <small *ngIf="newItemForm.controls['price'].dirty && newItemForm.hasError('required', 'price')" class="text-red-600">*Price is required</small>
+        <small *ngIf="newItemForm.controls['description'].dirty && newItemForm.hasError('required', 'description')" class="text-red-600">*Description is required</small>
 
         <div class="mt-5">
             <label for="imageLink" class="block mb-2 text-md font-normal text-black">Image</label>

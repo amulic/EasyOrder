@@ -11,8 +11,8 @@ namespace EasyOrder.API.Models.Domain
         //dodan za modelBuilder
         [ForeignKey("OrderId")]
         public int OrderId { get; set; }
-        public Order Order { get; set; }
-        public ICollection<OrderDetailItem<Food>> Foods { get; set; }
+        public virtual Order Order { get; set; }
+        public virtual ICollection<OrderDetailItem> OrderItems { get; set; }
         //public ICollection<OrderDetailItem<Drink>> Drinks { get; set; }
 
     }

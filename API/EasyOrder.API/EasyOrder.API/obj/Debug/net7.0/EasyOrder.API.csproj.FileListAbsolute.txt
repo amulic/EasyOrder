@@ -179,3 +179,5 @@ C:\Users\mulik\Desktop\RS1\EasyOrder\API\EasyOrder.API\EasyOrder.API\bin\Debug\n
 C:\Users\mulik\Desktop\RS1\EasyOrder\API\EasyOrder.API\EasyOrder.API\bin\Debug\net7.0\Backblaze.Client.dll
 C:\Users\mulik\Desktop\RS1\EasyOrder\API\EasyOrder.API\EasyOrder.API\bin\Debug\net7.0\System.ServiceModel.dll
 C:\Users\mulik\Desktop\RS1\EasyOrder\API\EasyOrder.API\EasyOrder.API\bin\Debug\net7.0\Polly.dll
+C:\Users\mulik\Desktop\RS1\EasyOrder\API\EasyOrder.API\EasyOrder.API\bin\Debug\net7.0\AWSSDK.Core.dll
+C:\Users\mulik\Desktop\RS1\EasyOrder\API\EasyOrder.API\EasyOrder.API\bin\Debug\net7.0\AWSSDK.S3.dll

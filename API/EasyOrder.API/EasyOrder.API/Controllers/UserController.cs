@@ -176,7 +176,7 @@ namespace EasyOrder.API.Controllers
                 return BadRequest(new { Message = pass });
 
             userObj.Password = PasswordHasher.HashPassword(userObj.Password);
-            userObj.Role = "User";
+            //userObj.Role = "User";
             userObj.Token = "";
             await _userRepository.CreateUserAsync(userObj);
 

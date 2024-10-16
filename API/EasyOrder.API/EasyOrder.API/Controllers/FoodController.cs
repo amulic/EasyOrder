@@ -57,7 +57,9 @@ namespace EasyOrder.API.Controllers
             if (foodCreate == null)
                 return BadRequest();
 
+            Console.WriteLine(foodCreate);
             var food = _foodRepository.GetFoods().Where(c => c.Name.Trim().ToUpper() == foodCreate.Name.TrimEnd().ToUpper()).FirstOrDefault();
+
 
             if (food != null)
             {
