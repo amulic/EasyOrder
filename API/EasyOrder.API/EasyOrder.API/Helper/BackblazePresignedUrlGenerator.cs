@@ -9,9 +9,9 @@ using static System.Net.Mime.MediaTypeNames;
 public class BackblazePresignedUrlGenerator
 {
     private readonly string bucketName = "EasyOrder";
-    private readonly string accessKey = "00570258419922a0000000004";
-    private readonly string secretKey = "K005tNOYD7cOqXwNJzHdt9SOuMyvO7g";
-    private readonly string serviceUrl = "https://s3.us-east-005.backblazeb2.com"; // Backblaze S3-compatible endpoint
+    private readonly string accessKey = "your_access_key";
+    private readonly string secretKey = "your_secret_key";
+    private readonly string serviceUrl = "your_service_url"; // Backblaze S3-compatible endpoint
 
     private readonly IAmazonS3 s3Client;
 
